@@ -1,0 +1,338 @@
+{
+  "2026-09-08": {
+    "dia": 2,
+    "tema": "Chatbot no es agente",
+    "imagenes": [
+      "carrusel-dia-02/slide-01.png",
+      "carrusel-dia-02/slide-02.png",
+      "carrusel-dia-02/slide-03.png",
+      "carrusel-dia-02/slide-04.png",
+      "carrusel-dia-02/slide-05.png",
+      "carrusel-dia-02/slide-06.png",
+      "carrusel-dia-02/slide-07.png",
+      "carrusel-dia-02/slide-08.png",
+      "carrusel-dia-02/slide-09.png"
+    ],
+    "pie": "«Ya tenemos un agente de IA.» Casi nunca es verdad.\n\nUn chatbot recibe texto y devuelve texto. Un agente decide qué hay que hacer y lo hace\ncon herramientas que tú controlas: consulta tu agenda, escribe en tu CRM, avisa a una\npersona cuando no está seguro.\n\nLa prueba son diez segundos: pregúntale si tienes hueco el martes. Si te contesta que sí\nsin haber mirado nada, te han vendido un chatbot con otro nombre.\n\nY antes de firmar, dos preguntas: ¿a qué sistema mío se conecta exactamente? ¿Qué hace\ncuando ese sistema no responde? Sin respuesta concreta a las dos, es un chatbot.\n\nGuárdatelo para tu próxima reunión con un proveedor.\n\n#agentesdeia #automatizacion #pymes #asesorias #inteligenciaartificial #n8n"
+  },
+  "2026-09-10": {
+    "dia": 4,
+    "tema": "Cuánta IA usan las empresas españolas",
+    "imagenes": [
+      "carrusel-dia-04/slide-01.png",
+      "carrusel-dia-04/slide-02.png",
+      "carrusel-dia-04/slide-03.png",
+      "carrusel-dia-04/slide-04.png",
+      "carrusel-dia-04/slide-05.png",
+      "carrusel-dia-04/slide-06.png",
+      "carrusel-dia-04/slide-07.png",
+      "carrusel-dia-04/slide-08.png",
+      "carrusel-dia-04/slide-09.png"
+    ],
+    "pie": "«Llegas tarde a la inteligencia artificial.» No es verdad.\n\nSegún el INE, solo el 21,1% de las empresas españolas de 10 o más empleados usó IA en el\nprimer trimestre de 2025. En las de menos de 10 empleados, el 13,4%. Cuatro de cada cinco\nnegocios de este país todavía no la han tocado.\n\nY ojo con el titular: dentro de ese 21% entra tanto quien tiene un proceso automatizado de\nverdad como quien redacta correos con un chat. No es lo mismo, ni cuesta lo mismo.\n\nTu ventaja no es la IA. Es que tu competencia tampoco la tiene todavía.\n\nFuente: INE, Encuesta sobre el uso de TIC y comercio electrónico en las empresas, año 2024\n– primer trimestre 2025, datos definitivos publicados el 22 de octubre de 2025.\n\n#inteligenciaartificial #pymes #españa #autonomos #datos #automatizacion"
+  },
+  "2026-09-15": {
+    "dia": 9,
+    "tema": "De un PDF de factura a un apunte contable",
+    "imagenes": [
+      "carrusel-dia-09/slide-01.png",
+      "carrusel-dia-09/slide-02.png",
+      "carrusel-dia-09/slide-03.png",
+      "carrusel-dia-09/slide-04.png",
+      "carrusel-dia-09/slide-05.png",
+      "carrusel-dia-09/slide-06.png",
+      "carrusel-dia-09/slide-07.png",
+      "carrusel-dia-09/slide-08.png",
+      "carrusel-dia-09/slide-09.png"
+    ],
+    "pie": "Seis pasos entre una factura que llega por correo y un apunte en tu contabilidad. Cinco\nlos hace una máquina.\n\nEl sexto —validar que el NIF es un NIF, que la fecha es una fecha y que la suma de las\nlíneas cuadra con el total— es el que separa una demo bonita de algo que puedes dejar\nfuncionando solo. Y es el que casi nadie monta.\n\nAdemás hay fecha en el calendario: desde enero de 2027 para sociedades y julio de 2027\npara autónomos, los sistemas de facturación tienen que cumplir requisitos antifraude\n(Real Decreto 1007/2023). Ordenar el proceso ahora sale más barato que correr después.\n\n#facturacion #verifactu #asesorias #automatizacion #pymes #contabilidad"
+  },
+  "2026-09-17": {
+    "dia": 11,
+    "tema": "Demo bonita vs. sistema que aguanta un lunes",
+    "imagenes": [
+      "carrusel-dia-11/slide-01.png",
+      "carrusel-dia-11/slide-02.png",
+      "carrusel-dia-11/slide-03.png",
+      "carrusel-dia-11/slide-04.png",
+      "carrusel-dia-11/slide-05.png",
+      "carrusel-dia-11/slide-06.png",
+      "carrusel-dia-11/slide-07.png",
+      "carrusel-dia-11/slide-08.png",
+      "carrusel-dia-11/slide-09.png"
+    ],
+    "pie": "En una demo todo funciona. Los lunes a las nueve, no.\n\nSiete cosas que separan una cosa de la otra: control de errores, límite de intentos,\nvalidación de salida, escalado a una persona, registro de decisiones, coste calculado por\nejecución y documentación en tu propia cuenta.\n\nNinguna se ve en la reunión de venta. Todas se notan el primer lunes.\n\nGuárdalo y úsalo con cualquier propuesta que te llegue. Con la mía también.\n\n#automatizacion #inteligenciaartificial #pymes #n8n #agentesdeia"
+  },
+  "2026-09-22": {
+    "dia": 16,
+    "tema": "Seis palabras traducidas",
+    "imagenes": [
+      "carrusel-dia-16/slide-01.png",
+      "carrusel-dia-16/slide-02.png",
+      "carrusel-dia-16/slide-03.png",
+      "carrusel-dia-16/slide-04.png",
+      "carrusel-dia-16/slide-05.png",
+      "carrusel-dia-16/slide-06.png",
+      "carrusel-dia-16/slide-07.png",
+      "carrusel-dia-16/slide-08.png",
+      "carrusel-dia-16/slide-09.png"
+    ],
+    "pie": "Agente, orquestador, llamada a herramienta, RAG, MCP y ejecución. Las seis traducidas al\nespañol de tu negocio.\n\nFíjate en la última: ejecución es una vuelta completa del flujo, y es la unidad que te van\na facturar. Si nadie te la ha explicado, es que nadie ha calculado cuánto te va a costar\na ti.\n\nGuárdatelo para no volver a asentir por educación en una reunión.\n\n#inteligenciaartificial #agentesdeia #rag #mcp #pymes #automatizacion"
+  },
+  "2026-09-24": {
+    "dia": 18,
+    "tema": "Cinco preguntas antes de firmar",
+    "imagenes": [
+      "carrusel-dia-18/slide-01.png",
+      "carrusel-dia-18/slide-02.png",
+      "carrusel-dia-18/slide-03.png",
+      "carrusel-dia-18/slide-04.png",
+      "carrusel-dia-18/slide-05.png",
+      "carrusel-dia-18/slide-06.png",
+      "carrusel-dia-18/slide-07.png",
+      "carrusel-dia-18/slide-08.png",
+      "carrusel-dia-18/slide-09.png"
+    ],
+    "pie": "Cinco preguntas. Si no sabe responder a tres, no firmes.\n\n1. ¿Qué pasa cuando el sistema no está seguro?\n2. ¿Dónde queda registrado lo que decidió?\n3. ¿Cuánto cuesta cada ejecución, con mi volumen?\n4. ¿En qué cuenta viven los flujos, en la mía o en la tuya?\n5. ¿Qué me llevo por escrito el día que no estés?\n\nSí, esto también me lo puedes preguntar a mí. Es exactamente lo que quiero: prefiero un\ncliente que sabe preguntar a uno que firma porque suena bien.\n\nCompártelo con quien tenga una propuesta encima de la mesa.\n\n#inteligenciaartificial #pymes #contratacion #automatizacion #asesorias"
+  },
+  "2026-09-29": {
+    "dia": 23,
+    "tema": "Ocho tareas: ¿IA sí o IA no?",
+    "imagenes": [
+      "carrusel-dia-23/slide-01.png",
+      "carrusel-dia-23/slide-02.png",
+      "carrusel-dia-23/slide-03.png",
+      "carrusel-dia-23/slide-04.png",
+      "carrusel-dia-23/slide-05.png",
+      "carrusel-dia-23/slide-06.png",
+      "carrusel-dia-23/slide-07.png",
+      "carrusel-dia-23/slide-08.png",
+      "carrusel-dia-23/slide-09.png"
+    ],
+    "pie": "Ocho tareas normales de una pyme. Solo tres necesitan un modelo de IA.\n\nAvisar de un vencimiento → automatización. Sacar datos de facturas → modelo, con\nvalidación. Repartir el correo → mitad y mitad. Decidir un despido → una persona, siempre.\nResponder dudas de tu manual → modelo con tus documentos. Emitir un certificado con\nformato fijo → plantilla de toda la vida. Resumir reuniones → modelo, y barato. Pasar\ndatos de un programa a otro → conexión directa.\n\nTres de ocho. El resto es fontanería, y la fontanería es la que te devuelve horas la\nprimera semana.\n\nHaz tu propia lista de ocho. Si dudas en alguna, déjamela en comentarios.\n\n#inteligenciaartificial #automatizacion #pymes #asesorias #productividad"
+  },
+  "2026-10-01": {
+    "dia": 25,
+    "tema": "Si llevas una gestoría, esto va contigo",
+    "imagenes": [
+      "carrusel-dia-25/slide-01.png",
+      "carrusel-dia-25/slide-02.png",
+      "carrusel-dia-25/slide-03.png",
+      "carrusel-dia-25/slide-04.png",
+      "carrusel-dia-25/slide-05.png",
+      "carrusel-dia-25/slide-06.png",
+      "carrusel-dia-25/slide-07.png",
+      "carrusel-dia-25/slide-08.png",
+      "carrusel-dia-25/slide-09.png"
+    ],
+    "pie": "Si llevas un despacho, tienes doscientos clientes y el mismo problema doscientas veces.\n\nPedir la documentación que falta, clasificar lo que llega, avisar de plazos, contestar la\nmisma duda de siempre. Cambia el nombre del cliente y nada más.\n\nY ahora hay fecha: desde el 1 de enero de 2027 para sociedades y el 1 de julio de 2027\npara autónomos, los sistemas de facturación tienen que cumplir requisitos antifraude\n(Real Decreto 1007/2023). Eso son doscientas conversaciones iguales que ya sabes que vienen.\n\nSe resuelve una vez y sirve para toda la cartera. Y después puedes ofrecerlo como un\nservicio de tu despacho, no como una herramienta que has comprado.\n\n[AQUÍ VA TU ACCIÓN DE CONVERSIÓN — variante A o B]\n\n#gestorias #asesorias #verifactu #automatizacion #pymes"
+  },
+  "2026-10-06": {
+    "dia": 30,
+    "tema": "Qué te llevas de un diagnóstico",
+    "imagenes": [
+      "carrusel-dia-30/slide-01.png",
+      "carrusel-dia-30/slide-02.png",
+      "carrusel-dia-30/slide-03.png",
+      "carrusel-dia-30/slide-04.png",
+      "carrusel-dia-30/slide-05.png",
+      "carrusel-dia-30/slide-06.png",
+      "carrusel-dia-30/slide-07.png",
+      "carrusel-dia-30/slide-08.png",
+      "carrusel-dia-30/slide-09.png"
+    ],
+    "pie": "Antes de automatizarte nada, alguien tiene que mirar cómo trabajas. De ahí sales con seis\ncosas:\n\n· el mapa de tu proceso tal y como es hoy (no como crees que es)\n· dónde se van las horas, con números tuyos\n· qué se puede automatizar ya, sin tocar lo que funciona\n· qué NO merece la pena, con el motivo\n· una estimación de coste antes de comprometer nada\n· y el orden: qué primero y qué puede esperar un año\n\nY lo importante: vale por sí solo. Aunque después no trabajes conmigo, el mapa y las\ncuentas te los quedas tú y puedes llevártelos a quien quieras.\n\n[ACCIÓN DE CONVERSIÓN — variante A o B]\n\n#diagnostico #automatizacion #pymes #asesorias #consultoria"
+  },
+  "2026-09-09": {
+    "dia": 3,
+    "tema": "Una hora al día en el correo (respaldo del reel del día 3)",
+    "imagenes": [
+      "carrusel-dia-03/slide-01.png",
+      "carrusel-dia-03/slide-02.png",
+      "carrusel-dia-03/slide-03.png",
+      "carrusel-dia-03/slide-04.png",
+      "carrusel-dia-03/slide-05.png",
+      "carrusel-dia-03/slide-06.png",
+      "carrusel-dia-03/slide-07.png",
+      "carrusel-dia-03/slide-08.png",
+      "carrusel-dia-03/slide-09.png"
+    ],
+    "pie": "La parte cara del problema del correo casi siempre se resuelve sin IA.\n\nMira tu bandeja de esta mañana: la mayoría son el mismo correo. Mismo remitente, mismo asunto, mismo adjunto. Eso no es una decisión, es una regla, y las reglas ya vienen en tu gestor de correo sin pagar nada.\n\nLo difícil es el 20% que queda: el correo raro, el que hay que leer entero para saber a quién va. Ahí sí entra un modelo, y solo ahí.\n\nPrimero lo aburrido, después lo caro. Al revés es como se gastan seis mil euros en resolver algo que se arreglaba con un filtro.\n\nMándaselo a quien en tu oficina hace esto cada mañana.\n\n#automatizacion #correoelectronico #pymes #autonomos #asesorias #productividad"
+  },
+  "2026-09-11": {
+    "dia": 5,
+    "tema": "Vuestro chatbot no falló por el modelo",
+    "imagenes": [
+      "carrusel-dia-05/slide-01.png",
+      "carrusel-dia-05/slide-02.png",
+      "carrusel-dia-05/slide-03.png",
+      "carrusel-dia-05/slide-04.png",
+      "carrusel-dia-05/slide-05.png",
+      "carrusel-dia-05/slide-06.png",
+      "carrusel-dia-05/slide-07.png",
+      "carrusel-dia-05/slide-08.png",
+      "carrusel-dia-05/slide-09.png"
+    ],
+    "pie": "Los pilotos de IA no se caen por el modelo. Se caen por lo que nadie configuró:\n\n· qué pasa cuando el sistema no está seguro\n· dónde queda registrado lo que decidió\n· cuántos intentos puede hacer antes de parar\n\nEso es la diferencia entre una demo que impresiona en una reunión y algo que aguanta un\nlunes por la mañana.\n\n¿Probasteis algo que salió mal? Cuéntame qué pasó y te digo por dónde se rompió.\n\n#inteligenciaartificial #automatizacion #pymes #chatbot #agentesdeia"
+  },
+  "2026-09-14": {
+    "dia": 8,
+    "tema": "Tres señales de que NO necesitas IA",
+    "imagenes": [
+      "carrusel-dia-08/slide-01.png",
+      "carrusel-dia-08/slide-02.png",
+      "carrusel-dia-08/slide-03.png",
+      "carrusel-dia-08/slide-04.png",
+      "carrusel-dia-08/slide-05.png",
+      "carrusel-dia-08/slide-06.png",
+      "carrusel-dia-08/slide-07.png",
+      "carrusel-dia-08/slide-08.png",
+      "carrusel-dia-08/slide-09.png"
+    ],
+    "pie": "Tres señales de que lo que te quieren vender no te hace falta:\n\n1. La regla es siempre la misma → eso es automatización, no IA\n2. Veinte casos al mes → el ahorro no paga la puesta en marcha\n3. La decisión la firma una persona → ahí no entra un modelo\n\nNinguna de las tres necesita inteligencia artificial. Y las tres se venden como si la\nnecesitaran.\n\nEnvíaselo a quien esté a punto de firmar algo.\n\n#inteligenciaartificial #automatizacion #pymes #autonomos #asesorias"
+  },
+  "2026-09-16": {
+    "dia": 10,
+    "tema": "Cómo hacer que la IA responda sobre TUS documentos",
+    "imagenes": [
+      "carrusel-dia-10/slide-01.png",
+      "carrusel-dia-10/slide-02.png",
+      "carrusel-dia-10/slide-03.png",
+      "carrusel-dia-10/slide-04.png",
+      "carrusel-dia-10/slide-05.png",
+      "carrusel-dia-10/slide-06.png",
+      "carrusel-dia-10/slide-07.png",
+      "carrusel-dia-10/slide-08.png",
+      "carrusel-dia-10/slide-09.png"
+    ],
+    "pie": "El truco no es que la IA «se aprenda» tus documentos. Es que busque el trozo correcto\nantes de contestar.\n\nEso se llama RAG, y la señal de que está bien montado es justo la contraria de lo que\nparece: que sepa decir «esto no lo pone en el documento».\n\nGuárdalo, que esto lo vas a tener que explicar en tu empresa.\n\n#rag #inteligenciaartificial #pymes #documentacion #asesorias"
+  },
+  "2026-09-18": {
+    "dia": 12,
+    "tema": "Tu chatbot ya está incumpliendo la ley",
+    "imagenes": [
+      "carrusel-dia-12/slide-01.png",
+      "carrusel-dia-12/slide-02.png",
+      "carrusel-dia-12/slide-03.png",
+      "carrusel-dia-12/slide-04.png",
+      "carrusel-dia-12/slide-05.png",
+      "carrusel-dia-12/slide-06.png",
+      "carrusel-dia-12/slide-07.png",
+      "carrusel-dia-12/slide-08.png",
+      "carrusel-dia-12/slide-09.png"
+    ],
+    "pie": "Desde el 2 de agosto de 2026 se aplican las obligaciones de transparencia del Reglamento\nEuropeo de IA: si alguien habla con un sistema de IA, tiene que saberlo.\n\nEn la práctica, para la mayoría de negocios pequeños es una frase en el saludo del bot.\nNo es un proyecto. Pero conviene tenerla.\n\n¿Tienes un bot en la web? Escribe «BOT» en comentarios y te digo qué le falta al saludo.\n\nFuente: Comisión Europea, calendario de aplicación del Reglamento de IA. Si lees esto\nmeses después, verifica la redacción vigente.\n\n#aiact #normativa #chatbot #pymes #inteligenciaartificial"
+  },
+  "2026-09-21": {
+    "dia": 15,
+    "tema": "Cuando digo que no",
+    "imagenes": [
+      "carrusel-dia-15/slide-01.png",
+      "carrusel-dia-15/slide-02.png",
+      "carrusel-dia-15/slide-03.png",
+      "carrusel-dia-15/slide-04.png",
+      "carrusel-dia-15/slide-05.png",
+      "carrusel-dia-15/slide-06.png",
+      "carrusel-dia-15/slide-07.png",
+      "carrusel-dia-15/slide-08.png",
+      "carrusel-dia-15/slide-09.png"
+    ],
+    "pie": "«Quiero meter IA en mi empresa» no es un encargo. Es una intención.\n\nNo se puede presupuestar y, sobre todo, no se puede entregar: acabas con una herramienta\nque nadie usa y con la sensación de que te han vendido humo.\n\nLo que sí se puede hacer es mirar un proceso concreto y decidir si merece la pena tocarlo.\nA veces sale que no.\n\n¿A ti te han vendido alguna vez algo que no necesitabas? Cuéntamelo.\n\n#consultoria #inteligenciaartificial #pymes #automatizacion"
+  },
+  "2026-09-23": {
+    "dia": 17,
+    "tema": "Tres cosas que ChatGPT hace mal",
+    "imagenes": [
+      "carrusel-dia-17/slide-01.png",
+      "carrusel-dia-17/slide-02.png",
+      "carrusel-dia-17/slide-03.png",
+      "carrusel-dia-17/slide-04.png",
+      "carrusel-dia-17/slide-05.png",
+      "carrusel-dia-17/slide-06.png",
+      "carrusel-dia-17/slide-07.png",
+      "carrusel-dia-17/slide-08.png",
+      "carrusel-dia-17/slide-09.png"
+    ],
+    "pie": "Tres cosas para las que ChatGPT es malo, y casi nadie las cuenta:\n\n1. Dar datos concretos que no tiene delante (se los construye)\n2. Calcular (no es una calculadora)\n3. Recibir datos confidenciales de tus clientes\n\nY una para la que es muy bueno: darle forma a algo que ya sabes.\n\nMándaselo a quien lo use todos los días en tu equipo.\n\n#chatgpt #inteligenciaartificial #productividad #pymes #proteccciondedatos"
+  },
+  "2026-09-25": {
+    "dia": 19,
+    "tema": "Por qué nadie te da un precio por WhatsApp",
+    "imagenes": [
+      "carrusel-dia-19/slide-01.png",
+      "carrusel-dia-19/slide-02.png",
+      "carrusel-dia-19/slide-03.png",
+      "carrusel-dia-19/slide-04.png",
+      "carrusel-dia-19/slide-05.png",
+      "carrusel-dia-19/slide-06.png",
+      "carrusel-dia-19/slide-07.png",
+      "carrusel-dia-19/slide-08.png",
+      "carrusel-dia-19/slide-09.png"
+    ],
+    "pie": "Una automatización se factura por cuatro cosas:\n\n· la plataforma, por ejecución (cada vuelta completa del flujo)\n· el modelo, por cantidad de texto, si hace falta\n· el diseño, una vez\n· el mantenimiento, todos los meses — el que nadie presupuesta\n\nNinguna de las cuatro se puede estimar sin ver tu proceso y tu volumen. Por eso primero se\nmira y después se habla de dinero.\n\n¿Te han dado alguna vez un precio cerrado sin verte el proceso?\n\n#precios #automatizacion #pymes #consultoria #inteligenciaartificial"
+  },
+  "2026-09-28": {
+    "dia": 22,
+    "tema": "Lo que puedes automatizar sin gastar un euro",
+    "imagenes": [
+      "carrusel-dia-22/slide-01.png",
+      "carrusel-dia-22/slide-02.png",
+      "carrusel-dia-22/slide-03.png",
+      "carrusel-dia-22/slide-04.png",
+      "carrusel-dia-22/slide-05.png",
+      "carrusel-dia-22/slide-06.png",
+      "carrusel-dia-22/slide-07.png",
+      "carrusel-dia-22/slide-08.png",
+      "carrusel-dia-22/slide-09.png"
+    ],
+    "pie": "Tres cosas que puedes hacer esta semana sin pagarle a nadie:\n\n1. Reglas y filtros en tu gestor de correo\n2. Respuestas guardadas para lo que escribes cada semana\n3. Plantillas de documento con campos\n\nParece contradictorio que te lo diga yo. No lo es: si esto te vale, no necesitabas\ncontratarme. Y si se te queda corto, ya sabes por dónde seguir.\n\n#productividad #automatizacion #autonomos #pymes #ofimatica"
+  },
+  "2026-09-30": {
+    "dia": 24,
+    "tema": "Nunca le des las llaves al agente",
+    "imagenes": [
+      "carrusel-dia-24/slide-01.png",
+      "carrusel-dia-24/slide-02.png",
+      "carrusel-dia-24/slide-03.png",
+      "carrusel-dia-24/slide-04.png",
+      "carrusel-dia-24/slide-05.png",
+      "carrusel-dia-24/slide-06.png",
+      "carrusel-dia-24/slide-07.png",
+      "carrusel-dia-24/slide-08.png",
+      "carrusel-dia-24/slide-09.png"
+    ],
+    "pie": "Un agente no debería tocar tu base de datos ni tu CRM directamente. Debería pedir que se\nejecute una función que tú controlas.\n\nEn esa capa de en medio se decide qué puede leer, qué puede escribir, qué no puede borrar\nnunca y qué exige que una persona apruebe.\n\nEs lo que hace que «mis datos son confidenciales» deje de ser un problema.\n\nSi vas a conectar una IA a tus sistemas, mira esto antes.\n\n#seguridad #agentesdeia #inteligenciaartificial #pymes #datos"
+  },
+  "2026-10-02": {
+    "dia": 26,
+    "tema": "MCP, el enchufe estándar",
+    "imagenes": [
+      "carrusel-dia-26/slide-01.png",
+      "carrusel-dia-26/slide-02.png",
+      "carrusel-dia-26/slide-03.png",
+      "carrusel-dia-26/slide-04.png",
+      "carrusel-dia-26/slide-05.png",
+      "carrusel-dia-26/slide-06.png",
+      "carrusel-dia-26/slide-07.png",
+      "carrusel-dia-26/slide-08.png",
+      "carrusel-dia-26/slide-09.png"
+    ],
+    "pie": "MCP, en cristiano: un formato común para conectar herramientas a un modelo, en vez de\nprogramar cada conexión a medida.\n\nTraducido a tu factura: menos horas de integración y menos dependencia de quien te lo montó.\n\nPregunta siempre si usan un estándar o una conexión propia. Esa respuesta te dice cuánto\nvas a depender de ellos dentro de dos años.\n\n#mcp #inteligenciaartificial #integraciones #pymes #automatizacion"
+  },
+  "2026-10-05": {
+    "dia": 29,
+    "tema": "Treinta días diciendo que no",
+    "imagenes": [
+      "carrusel-dia-29/slide-01.png",
+      "carrusel-dia-29/slide-02.png",
+      "carrusel-dia-29/slide-03.png",
+      "carrusel-dia-29/slide-04.png",
+      "carrusel-dia-29/slide-05.png",
+      "carrusel-dia-29/slide-06.png",
+      "carrusel-dia-29/slide-07.png",
+      "carrusel-dia-29/slide-08.png",
+      "carrusel-dia-29/slide-09.png"
+    ],
+    "pie": "Un mes explicando cuándo NO hace falta la inteligencia artificial. Estas son las tres\ntareas que más me habéis nombrado vosotros, y qué haría con cada una.\n\n[Las tres, con veredicto]\n\n[ACCIÓN DE CONVERSIÓN — variante A o B]\n\n#automatizacion #pymes #inteligenciaartificial #consultoria"
+  }
+}
