@@ -2,8 +2,11 @@ name: Publicar carrusel del día
 
 on:
   schedule:
-    # 12:00 UTC = 14:00 en España (horario de verano) / 13:00 (horario de invierno). GitHub suele arrancar los flujos programados con unos minutos de retraso.
-    - cron: "0 12 * * *"
+    # 12:05 UTC = 14:05 en España (horario de verano) / 13:05 (horario de invierno).
+    # Se evita el minuto en punto (12:00) porque GitHub avisa de que es la hora de mayor
+    # carga de todo Actions y los cron ahí sufren más retraso. El 10-sep-2026 el disparador
+    # de las 12:00 UTC no llegó a saltar en unos 45 minutos; con el minuto 5 se evita ese pico.
+    - cron: "5 12 * * *"
   workflow_dispatch:
 
 permissions:
