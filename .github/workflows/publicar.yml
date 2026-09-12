@@ -8,6 +8,11 @@ on:
     # de las 12:00 UTC no llegó a saltar en unos 45 minutos; con el minuto 5 se evita ese pico.
     - cron: "5 12 * * *"
   workflow_dispatch:
+    inputs:
+      fecha:
+        description: "Fecha a forzar (AAAA-MM-DD). Vacío = hoy."
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -28,6 +33,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           BASE_URL: ${{ vars.BASE_URL }}
           PUBLICAR_DE_VERDAD: ${{ vars.PUBLICAR_DE_VERDAD }}
+          FECHA_FORZAR: ${{ github.event.inputs.fecha }}
         run: python publicar.py
 
       - name: Guardar el registro
