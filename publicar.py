@@ -15,6 +15,9 @@ Variables de entorno necesarias:
     IG_USER_ID      identificador de la cuenta de Instagram
     BASE_URL        dirección pública donde viven los PNG (GitHub Pages)
     PUBLICAR_DE_VERDAD   "1" para publicar; cualquier otra cosa = modo revisión
+    FECHA_FORZAR    opcional, "AAAA-MM-DD". Si se indica, se usa esa fecha en vez
+                    de la de hoy para mirar en calendario.json — sirve para
+                    recuperar manualmente un día que no se publicó a su hora.
 
 La API no acepta archivos: se le pasa la URL pública de cada imagen y ella la descarga.
 """
@@ -179,7 +182,7 @@ def main():
     modo_prueba = "--prueba" in sys.argv
     de_verdad = os.environ.get("PUBLICAR_DE_VERDAD") == "1" and not modo_prueba
 
-    hoy = datetime.date.today().isoformat()
+    hoy = os.environ.get("FECHA_FORZAR", "").strip() or datetime.date.today().isoformat()
     log(f"Fecha: {hoy} · modo: {'PUBLICAR' if de_verdad else 'REVISIÓN (no publica)'}")
 
     calendario = cargar_json(CALENDARIO, None)
