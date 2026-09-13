@@ -1,0 +1,81 @@
+# publicar.yml propuesto
+
+No he podido escribir este cambio directamente: el conector de GitHub que uso no tiene
+permiso para modificar ficheros dentro de `.github/workflows/`. Copia el contenido de
+abajo sobre `.github/workflows/publicar.yml` desde la web de GitHub (boton del lapiz).
+
+Tres cambios respecto al actual:
+
+1. **Tres crons en vez de uno.** GitHub documenta `schedule` como esfuerzo razonable, no
+   garantizado. `publicar.py` es idempotente por `registro.json`, asi que el segundo y el
+   tercer intento no publican de mas: solo recogen el dia que se cayo el primero.
+2. **`concurrency`.** Impide que dos disparadores (dos crons, o un cron y el respaldo de
+   n8n) corran a la vez y publiquen dos veces.
+3. **`git pull --rebase --autostash` antes del push.** Si `main` se movio mientras corria
+   la publicacion, el push directo falla y el registro se pierde aunque el carrusel ya
+   este publicado en Instagram. Ese es el caso peor: publicado y sin registrar, porque al
+   dia siguiente el flujo creeria que no se publico.
+
+---
+
+```yaml
+name: Publicar carrusel del día
+
+on:
+  schedule:
+    # Tres intentos al día, no uno. GitHub documenta el evento `schedule` como esfuerzo
+    # razonable, no garantizado: puede retrasarse en periodos de alta carga y, si la carga
+    # es suficiente, algunos trabajos encolados se descartan. El 10-sep-2026 la ejecución
+    # llegó con 67 minutos de retraso y el día 11 no llegó.
+    # publicar.py es idempotente por registro.json: si el día ya está publicado, no repite.
+    # Minutos no redondos a propósito: el comienzo de cada hora es el momento de más carga.
+    - cron: "7 12 * * *"
+    - cron: "23 14 * * *"
+    - cron: "41 16 * * *"
+  workflow_dispatch:
+    inputs:
+      fecha:
+        description: "Fecha a forzar (AAAA-MM-DD). Vacío = hoy."
+        required: false
+        default: ""
+
+# Cerrojo: si dos disparadores coinciden, el segundo espera al primero en vez de correr en
+# paralelo. Sin esto, ambos leerían registro.json antes de que ninguno lo hubiera escrito
+# y el carrusel saldría dos veces.
+concurrency:
+  group: publicar-instagram
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Publicar
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          BASE_URL: ${{ vars.BASE_URL }}
+          PUBLICAR_DE_VERDAD: ${{ vars.PUBLICAR_DE_VERDAD }}
+          FECHA_FORZAR: ${{ github.event.inputs.fecha }}
+        run: python publicar.py
+
+      - name: Guardar el registro
+        run: |
+          if [[ -n "$(git status --porcelain registro.json)" ]]; then
+            git config user.name "publicador"
+            git config user.email "publicador@users.noreply.github.com"
+            git add registro.json
+            git commit -m "Registro de la publicacion del $(date +%F)"
+            git pull --rebase --autostash
+            git push
+          fi
+```
