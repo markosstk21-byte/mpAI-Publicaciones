@@ -5,12 +5,12 @@
       "parameters": {
         "rule": {
           "interval": [
-            { "field": "cronExpression", "expression": "0 18 * * *" }
+            { "field": "cronExpression", "expression": "15 19 * * *" }
           ]
         }
       },
       "id": "aa000000-0000-4000-8000-000000000001",
-      "name": "Cada dia a las 18:00",
+      "name": "Cada dia a las 19:15",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
       "position": [-860, 300],
@@ -160,7 +160,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// Comprueba si el rescate funciono de verdad y redacta el aviso.\n// Siempre devuelve un item: si el flujo ha llegado hasta aqui es porque\n// hubo que intervenir, y eso se cuenta siempre.\n\nconst d = $('Decidir si hay que rescatar').first().json;\nconst codigo = $('Disparar el workflow').first().json.statusCode;\n\nlet publicado = false;\nlet idPublicacion = null;\nlet nota = '';\n\ntry {\n  const registro = JSON.parse($('Releer registro').first().json.cuerpo);\n  if (registro[d.fecha]) {\n    publicado = true;\n    idPublicacion = registro[d.fecha].id ?? null;\n  }\n} catch (e) {\n  nota = 'Ademas, el registro no se pudo releer: ' + e.message;\n}\n\nconst ok = codigo === 204 && publicado;\n\nlet cuerpo;\nif (ok) {\n  cuerpo = 'El cron de GitHub no habia publicado la pieza de hoy a las 18:00. El respaldo disparo el workflow y la publicacion salio.\\n\\n'\n    + 'Fecha: ' + d.fecha + '\\nPieza: dia ' + d.dia + ' - ' + d.tema + '\\nId de la publicacion: ' + idPublicacion + '\\n\\n'\n    + 'Si esto llega varios dias seguidos, el cron de GitHub no es fiable en este repositorio: adelanta la hora del respaldo o deja de depender de el.';\n} else if (codigo !== 204) {\n  cuerpo = 'El respaldo intento disparar el workflow y GitHub respondio ' + codigo + ' en vez de 204. NO se ha publicado nada.\\n\\n'\n    + 'Fecha: ' + d.fecha + '\\nPieza: dia ' + d.dia + ' - ' + d.tema + '\\n\\n'\n    + '401 o 403: el token de n8n ha caducado o le falta permiso de Actions.\\n'\n    + '404: el token no ve el repositorio, o el fichero publicar.yml ha cambiado de nombre.\\n'\n    + 'Hay que publicar a mano hoy.';\n} else {\n  cuerpo = 'El respaldo disparo el workflow (GitHub acepto con 204) pero seis minutos despues el registro sigue sin la pieza de hoy. NO consta publicada.\\n\\n'\n    + 'Fecha: ' + d.fecha + '\\nPieza: dia ' + d.dia + ' - ' + d.tema + '\\n\\n'\n    + 'Causas habituales, por orden: la variable PUBLICAR_DE_VERDAD no vale \"1\" y el workflow termina en modo revision sin publicar; el token de Meta ha caducado; alguna imagen no se sirve desde GitHub Pages.\\n'\n    + 'Mira el registro de la ejecucion en la pestana Actions.'\n    + (nota ? '\\n\\n' + nota : '');\n}\n\nreturn [{\n  json: {\n    estado: ok ? 'OK' : 'ALERTA',\n    asunto: (ok ? '[Instagram] Rescatado el dia ' : '[Instagram] FALLO: sigue sin publicarse el dia ') + d.fecha,\n    cuerpo\n  }\n}];"
+        "jsCode": "// Comprueba si el rescate funciono de verdad y redacta el aviso.\n// Siempre devuelve un item: si el flujo ha llegado hasta aqui es porque\n// hubo que intervenir, y eso se cuenta siempre.\n\nconst d = $('Decidir si hay que rescatar').first().json;\nconst codigo = $('Disparar el workflow').first().json.statusCode;\n\nlet publicado = false;\nlet idPublicacion = null;\nlet nota = '';\n\ntry {\n  const registro = JSON.parse($('Releer registro').first().json.cuerpo);\n  if (registro[d.fecha]) {\n    publicado = true;\n    idPublicacion = registro[d.fecha].id ?? null;\n  }\n} catch (e) {\n  nota = 'Ademas, el registro no se pudo releer: ' + e.message;\n}\n\nconst ok = codigo === 204 && publicado;\n\nlet cuerpo;\nif (ok) {\n  cuerpo = 'El cron de GitHub no habia publicado la pieza de hoy a las 19:15. El respaldo disparo el workflow y la publicacion salio.\\n\\n'\n    + 'Fecha: ' + d.fecha + '\\nPieza: dia ' + d.dia + ' - ' + d.tema + '\\nId de la publicacion: ' + idPublicacion + '\\n\\n'\n    + 'Si esto llega varios dias seguidos, el cron de GitHub no es fiable en este repositorio: adelanta la hora del respaldo o deja de depender de el.';\n} else if (codigo !== 204) {\n  cuerpo = 'El respaldo intento disparar el workflow y GitHub respondio ' + codigo + ' en vez de 204. NO se ha publicado nada.\\n\\n'\n    + 'Fecha: ' + d.fecha + '\\nPieza: dia ' + d.dia + ' - ' + d.tema + '\\n\\n'\n    + '401 o 403: el token de n8n ha caducado o le falta permiso de Actions.\\n'\n    + '404: el token no ve el repositorio, o el fichero publicar.yml ha cambiado de nombre.\\n'\n    + 'Hay que publicar a mano hoy.';\n} else {\n  cuerpo = 'El respaldo disparo el workflow (GitHub acepto con 204) pero seis minutos despues el registro sigue sin la pieza de hoy. NO consta publicada.\\n\\n'\n    + 'Fecha: ' + d.fecha + '\\nPieza: dia ' + d.dia + ' - ' + d.tema + '\\n\\n'\n    + 'Causas habituales, por orden: la variable PUBLICAR_DE_VERDAD no vale \"1\" y el workflow termina en modo revision sin publicar; el token de Meta ha caducado; alguna imagen no se sirve desde GitHub Pages.\\n'\n    + 'Mira el registro de la ejecucion en la pestana Actions.'\n    + (nota ? '\\n\\n' + nota : '');\n}\n\nreturn [{\n  json: {\n    estado: ok ? 'OK' : 'ALERTA',\n    asunto: (ok ? '[Instagram] Rescatado el dia ' : '[Instagram] FALLO: sigue sin publicarse el dia ') + d.fecha,\n    cuerpo\n  }\n}];"
       },
       "id": "aa000000-0000-4000-8000-000000000008",
       "name": "Comprobar el resultado",
@@ -187,7 +187,7 @@
     }
   ],
   "connections": {
-    "Cada dia a las 18:00": { "main": [[{ "node": "Leer registro", "type": "main", "index": 0 }]] },
+    "Cada dia a las 19:15": { "main": [[{ "node": "Leer registro", "type": "main", "index": 0 }]] },
     "Leer registro": { "main": [[{ "node": "Leer calendario", "type": "main", "index": 0 }]] },
     "Leer calendario": { "main": [[{ "node": "Decidir si hay que rescatar", "type": "main", "index": 0 }]] },
     "Decidir si hay que rescatar": { "main": [[{ "node": "Disparar el workflow", "type": "main", "index": 0 }]] },
