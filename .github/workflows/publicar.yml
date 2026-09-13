@@ -2,17 +2,28 @@ name: Publicar carrusel del día
 
 on:
   schedule:
-    # 12:05 UTC = 14:05 en España (horario de verano) / 13:05 (horario de invierno).
-    # Se evita el minuto en punto (12:00) porque GitHub avisa de que es la hora de mayor
-    # carga de todo Actions y los cron ahí sufren más retraso. El 10-sep-2026 el disparador
-    # de las 12:00 UTC no llegó a saltar en unos 45 minutos; con el minuto 5 se evita ese pico.
-    - cron: "5 12 * * *"
+    # Tres intentos al día, no uno. GitHub documenta el evento `schedule` como esfuerzo
+    # razonable, no garantizado: puede retrasarse en periodos de alta carga y, si la carga
+    # es suficiente, algunos trabajos encolados se descartan. El 10-sep-2026 la ejecución
+    # llegó con 67 minutos de retraso y el día 11 no llegó.
+    # publicar.py es idempotente por registro.json: si el día ya está publicado, no repite.
+    # Minutos no redondos a propósito: el comienzo de cada hora es el momento de más carga.
+    - cron: "7 12 * * *"
+    - cron: "23 14 * * *"
+    - cron: "41 16 * * *"
   workflow_dispatch:
     inputs:
       fecha:
         description: "Fecha a forzar (AAAA-MM-DD). Vacío = hoy."
         required: false
         default: ""
+
+# Cerrojo: si dos disparadores coinciden, el segundo espera al primero en vez de correr en
+# paralelo. Sin esto, ambos leerían registro.json antes de que ninguno lo hubiera escrito
+# y el carrusel saldría dos veces.
+concurrency:
+  group: publicar-instagram
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -43,5 +54,6 @@ jobs:
             git config user.email "publicador@users.noreply.github.com"
             git add registro.json
             git commit -m "Registro de la publicacion del $(date +%F)"
+            git pull --rebase --autostash
             git push
           fi
