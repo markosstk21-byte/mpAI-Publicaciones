@@ -175,6 +175,22 @@
     ],
     "pie": "«Agente autónomo» es la palabra de 2026. Casi nadie la usa bien.\n\nUn agente de verdad decide su propio siguiente paso, cada vez, sobre la marcha. Un flujo determinista lo decides tú una vez, al diseñarlo.\n\nLa pregunta que lo resuelve: ¿el orden de los pasos cambia según el caso, o es siempre el mismo? Si es siempre el mismo, no hace falta un agente — hace falta un flujo bien montado, que sale más barato y no da sorpresas.\n\nLa mitad de lo que hoy se vende como «agente autónomo» es justo eso: un flujo con un nombre de moda.\n\n¿A ti te han vendido un «agente» para algo que en realidad era siempre igual? Cuéntamelo.\n\n#agentesdeia #inteligenciaartificial #automatizacion #pymes #n8n #agentesautonomos"
   },
+  "2026-09-20": {
+    "dia": 14,
+    "tema": "Cuatro preguntas sobre tu propio proceso",
+    "imagenes": [
+      "carrusel-dia-14/slide-01.png",
+      "carrusel-dia-14/slide-02.png",
+      "carrusel-dia-14/slide-03.png",
+      "carrusel-dia-14/slide-04.png",
+      "carrusel-dia-14/slide-05.png",
+      "carrusel-dia-14/slide-06.png",
+      "carrusel-dia-14/slide-07.png",
+      "carrusel-dia-14/slide-08.png",
+      "carrusel-dia-14/slide-09.png"
+    ],
+    "pie": "Cuatro preguntas para saber si una tarea tuya se puede automatizar, sin hablar con nadie\nni mirar ninguna herramienta:\n\n1. ¿Podrías darle una regla fija a alguien nuevo? Si es «depende», apunta de qué depende\n2. ¿Cuántas veces al mes? Minutos × veces × 12. Si no salen horas de verdad, déjalo\n3. ¿Qué pasa si sale mal? Cuanto más caro el error, más control hace falta\n4. ¿Firma alguien? Si una persona responde por ello, esa parte no se automatiza\n\nRegla fija, muchas veces, error barato y sin firma: eso se automatiza esta semana y sin IA.\nDepende del criterio, pasa poco y el error sale caro: déjalo en manos de una persona.\n\nPrimero el proceso, después la herramienta. Al revés es como se compran licencias que\nnadie usa a los tres meses.\n\n#automatizacion #procesos #pymes #asesorias #inteligenciaartificial"
+  },
   "2026-09-21": {
     "dia": 15,
     "tema": "Cuando digo que no",
@@ -255,6 +271,38 @@
     ],
     "pie": "Una automatización se factura por cuatro cosas:\n\n· la plataforma, por ejecución (cada vuelta completa del flujo)\n· el modelo, por cantidad de texto, si hace falta\n· el diseño, una vez\n· el mantenimiento, todos los meses — el que nadie presupuesta\n\nNinguna de las cuatro se puede estimar sin ver tu proceso y tu volumen. Por eso primero se\nmira y después se habla de dinero.\n\n¿Te han dado alguna vez un precio cerrado sin verte el proceso?\n\n#precios #automatizacion #pymes #consultoria #inteligenciaartificial"
   },
+  "2026-09-26": {
+    "dia": 20,
+    "tema": "Lo que pasa cuando se equivoca",
+    "imagenes": [
+      "carrusel-dia-20/slide-01.png",
+      "carrusel-dia-20/slide-02.png",
+      "carrusel-dia-20/slide-03.png",
+      "carrusel-dia-20/slide-04.png",
+      "carrusel-dia-20/slide-05.png",
+      "carrusel-dia-20/slide-06.png",
+      "carrusel-dia-20/slide-07.png",
+      "carrusel-dia-20/slide-08.png",
+      "carrusel-dia-20/slide-09.png"
+    ],
+    "pie": "Se va a equivocar. La pregunta no es si falla, sino qué pasa exactamente el día que falle.\n\nLos cuatro fallos reales y cómo se controlan:\n\n· se inventa un dato → se valida la salida: si el NIF no tiene forma de NIF, no pasa\n· se queda dando vueltas → límite de intentos y aviso\n· el otro sistema no responde → el trabajo se guarda y se reintenta, no se duplica\n· falla en silencio → queda registrado qué entró, qué decidió y por qué\n\nY la pieza que lo sostiene todo: cuando el sistema no está seguro, no adivina. Para y avisa\na una persona, con el motivo.\n\nDiez facturas bien metidas valen más que cien mal metidas.\n\nAntes de firmar nada, pregunta: ¿qué pasa cuando se equivoque?\n\n#automatizacion #produccion #pymes #inteligenciaartificial #procesos"
+  },
+  "2026-09-27": {
+    "dia": 21,
+    "tema": "Por qué empiezo por lo aburrido",
+    "imagenes": [
+      "carrusel-dia-21/slide-01.png",
+      "carrusel-dia-21/slide-02.png",
+      "carrusel-dia-21/slide-03.png",
+      "carrusel-dia-21/slide-04.png",
+      "carrusel-dia-21/slide-05.png",
+      "carrusel-dia-21/slide-06.png",
+      "carrusel-dia-21/slide-07.png",
+      "carrusel-dia-21/slide-08.png",
+      "carrusel-dia-21/slide-09.png"
+    ],
+    "pie": "Empiezo siempre por lo más aburrido. No es humildad: es que funciona y cuesta una décima\nparte.\n\nLos cinco escalones, de abajo arriba:\n\n1. Sin IA — mover, copiar, avisar, clasificar por reglas\n2. Leer y clasificar — sacar campos de una factura, ordenar correos por su asunto real\n3. Responder sobre tus documentos — buscar el fragmento que vale y dárselo al modelo\n4. Actuar — escribir en el CRM o cerrar una cita. Aquí empiezan los permisos y los límites\n5. Repartir el trabajo entre varios — muy pocas pymes necesitan llegar aquí\n\nNo se sube hasta que el escalón de abajo aguanta. Uno que falla se nota; cinco a la vez\nfallan sin que sepas cuál.\n\nLa mayoría de lo que una pyme necesita vive en el uno y el dos. Ahí está el ahorro, y ahí\nno hay espectáculo que vender.\n\n#automatizacion #agentes #pymes #inteligenciaartificial #procesos"
+  },
   "2026-09-28": {
     "dia": 22,
     "tema": "Lo que puedes automatizar sin gastar un euro",
@@ -334,6 +382,38 @@
       "carrusel-dia-26/slide-09.png"
     ],
     "pie": "MCP, en cristiano: un formato común para conectar herramientas a un modelo, en vez de\nprogramar cada conexión a medida.\n\nTraducido a tu factura: menos horas de integración y menos dependencia de quien te lo montó.\n\nPregunta siempre si usan un estándar o una conexión propia. Esa respuesta te dice cuánto\nvas a depender de ellos dentro de dos años.\n\n#mcp #inteligenciaartificial #integraciones #pymes #automatizacion"
+  },
+  "2026-10-03": {
+    "dia": 27,
+    "tema": "Lo que le pido a una herramienta",
+    "imagenes": [
+      "carrusel-dia-27/slide-01.png",
+      "carrusel-dia-27/slide-02.png",
+      "carrusel-dia-27/slide-03.png",
+      "carrusel-dia-27/slide-04.png",
+      "carrusel-dia-27/slide-05.png",
+      "carrusel-dia-27/slide-06.png",
+      "carrusel-dia-27/slide-07.png",
+      "carrusel-dia-27/slide-08.png",
+      "carrusel-dia-27/slide-09.png"
+    ],
+    "pie": "Seis cosas que compruebo de una herramienta antes de meterla en el negocio de alguien.\nNinguna es una función bonita:\n\n1. ¿Te llevas tus datos al salir, y en qué formato?\n2. ¿Dónde se guardan y con quién se comparten?\n3. ¿Qué cuesta cuando lo uses el doble, que es lo que pasa si funciona?\n4. ¿Avisa cuando se rompe, o te enteras tú?\n5. ¿Se conecta con lo que ya tienes, o hay que copiar a mano entre dos programas?\n6. ¿Quién está detrás y desde cuándo?\n\nTodas las herramientas enseñan lo que hacen. Casi ninguna enseña qué pasa el día que falla\no el día que te vas.\n\nMándaselas a quien te la quiera vender. Las respuestas valen más que la demostración.\n\n#herramientas #pymes #automatizacion #criterio #inteligenciaartificial"
+  },
+  "2026-10-04": {
+    "dia": 28,
+    "tema": "Lo que vas a encontrar aquí",
+    "imagenes": [
+      "carrusel-dia-28/slide-01.png",
+      "carrusel-dia-28/slide-02.png",
+      "carrusel-dia-28/slide-03.png",
+      "carrusel-dia-28/slide-04.png",
+      "carrusel-dia-28/slide-05.png",
+      "carrusel-dia-28/slide-06.png",
+      "carrusel-dia-28/slide-07.png",
+      "carrusel-dia-28/slide-08.png",
+      "carrusel-dia-28/slide-09.png"
+    ],
+    "pie": "Un mes publicando. Toca decir en voz alta de qué va esto.\n\nAquí hay:\n· procesos explicados por dentro, en castellano\n· criterio para decir que no, que es la mayor parte de las veces\n· las cuentas antes de firmar\n\nAquí no hay:\n· trucos ni códigos secretos de ChatGPT: son entretenidos y no arreglan un proceso\n· prisa, porque el 86% de las empresas pequeñas españolas aún no usa IA\n· casos ni testimonios inventados. Cuando haya uno real, tendrá nombre\n\nSi algo de lo que publico no se entiende a la primera, es fallo mío. Dímelo y lo reescribo.\n\nSi llevas una pyme o una asesoría y hay un proceso que te come la semana, cuéntamelo por\nmensaje.\n\n#mpia #pymes #automatizacion #inteligenciaartificial #asesorias"
   },
   "2026-10-05": {
     "dia": 29,
