@@ -5,19 +5,16 @@
       "parameters": {
         "rule": {
           "interval": [
-            {
-              "field": "cronExpression",
-              "expression": "0 18 * * *"
-            }
+            { "field": "cronExpression", "expression": "0 18 * * *" }
           ]
         }
       },
-      "id": "a1000000-0000-4000-8000-000000000001",
+      "id": "aa000000-0000-4000-8000-000000000001",
       "name": "Cada dia a las 18:00",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
-      "position": [-520, 300],
-      "notes": "Zona horaria del flujo: Europe/Madrid (Settings del flujo). Seis horas de margen sobre el cron de GitHub de las 12:05 UTC."
+      "position": [-860, 300],
+      "notes": "Zona horaria Europe/Madrid (ajustes del flujo). El ultimo cron de GitHub es a las 16:41 UTC: el respaldo entra despues."
     },
     {
       "parameters": {
@@ -27,34 +24,23 @@
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
-            {
-              "name": "Accept",
-              "value": "application/vnd.github.raw"
-            },
-            {
-              "name": "X-GitHub-Api-Version",
-              "value": "2022-11-28"
-            },
-            {
-              "name": "User-Agent",
-              "value": "mpai-vigia"
-            }
+            { "name": "Accept", "value": "application/vnd.github.raw" },
+            { "name": "X-GitHub-Api-Version", "value": "2022-11-28" },
+            { "name": "User-Agent", "value": "mpai-vigia" }
           ]
         },
         "options": {
+          "timeout": 20000,
           "response": {
-            "response": {
-              "responseFormat": "text",
-              "outputPropertyName": "cuerpo"
-            }
+            "response": { "responseFormat": "text", "outputPropertyName": "cuerpo" }
           }
         }
       },
-      "id": "a1000000-0000-4000-8000-000000000002",
+      "id": "aa000000-0000-4000-8000-000000000002",
       "name": "Leer registro",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [-300, 300],
+      "position": [-640, 300],
       "retryOnFail": true,
       "maxTries": 3,
       "waitBetweenTries": 5000,
@@ -68,47 +54,36 @@
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
-            {
-              "name": "Accept",
-              "value": "application/vnd.github.raw"
-            },
-            {
-              "name": "X-GitHub-Api-Version",
-              "value": "2022-11-28"
-            },
-            {
-              "name": "User-Agent",
-              "value": "mpai-vigia"
-            }
+            { "name": "Accept", "value": "application/vnd.github.raw" },
+            { "name": "X-GitHub-Api-Version", "value": "2022-11-28" },
+            { "name": "User-Agent", "value": "mpai-vigia" }
           ]
         },
         "options": {
+          "timeout": 20000,
           "response": {
-            "response": {
-              "responseFormat": "text",
-              "outputPropertyName": "cuerpo"
-            }
+            "response": { "responseFormat": "text", "outputPropertyName": "cuerpo" }
           }
         }
       },
-      "id": "a1000000-0000-4000-8000-000000000003",
+      "id": "aa000000-0000-4000-8000-000000000003",
       "name": "Leer calendario",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [-80, 300],
+      "position": [-420, 300],
       "retryOnFail": true,
       "maxTries": 3,
       "waitBetweenTries": 5000
     },
     {
       "parameters": {
-        "jsCode": "// Decide si hay que rescatar el dia de hoy.\n// Devuelve un item solo cuando hay pieza programada y NO esta publicada.\n// Si no hay nada que hacer, devuelve [] y el flujo termina en silencio.\n\nconst hoy = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Madrid' });\n\nlet registro, calendario;\ntry {\n  registro = JSON.parse($('Leer registro').first().json.cuerpo);\n} catch (e) {\n  throw new Error('registro.json no se pudo interpretar: ' + e.message);\n}\ntry {\n  calendario = JSON.parse($('Leer calendario').first().json.cuerpo);\n} catch (e) {\n  throw new Error('calendario.json no se pudo interpretar: ' + e.message);\n}\n\nconst pieza = calendario[hoy];\n\nif (!pieza) {\n  // No hay pieza programada para hoy (fin de semana sin contenido, calendario agotado).\n  // No es un fallo: no se dispara nada.\n  return [];\n}\n\nif (registro[hoy]) {\n  // El cron de GitHub ya publico. Nada que hacer.\n  return [];\n}\n\nreturn [{\n  json: {\n    fecha: hoy,\n    dia: pieza.dia ?? null,\n    tema: pieza.tema ?? '(sin tema en el calendario)',\n    motivo: 'Hay pieza programada y el registro no la tiene. El cron de GitHub no ha llegado.'\n  }\n}];"
+        "jsCode": "// Decide si hay que rescatar el dia de hoy.\n// Devuelve un item SOLO cuando hay pieza programada y no esta publicada.\n// Si no hay nada que hacer devuelve [] y el flujo termina en silencio.\n\nconst hoy = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Madrid' });\n\nfunction leer(nombreNodo) {\n  const texto = $(nombreNodo).first().json.cuerpo;\n  if (typeof texto !== 'string') {\n    throw new Error(nombreNodo + ': la respuesta no llego como texto. Revisa que el nodo tenga Response Format = Text y Put Output in Field = cuerpo.');\n  }\n  try {\n    return JSON.parse(texto);\n  } catch (e) {\n    throw new Error(nombreNodo + ': el contenido no es JSON valido (' + e.message + ')');\n  }\n}\n\nconst registro = leer('Leer registro');\nconst calendario = leer('Leer calendario');\nconst pieza = calendario[hoy];\n\n// Sin pieza programada no hay fallo que rescatar: fin de semana sin contenido\n// o calendario agotado. El silencio aqui no prueba que todo vaya bien.\nif (!pieza) return [];\n\n// El cron de GitHub ya publico. Nada que hacer.\nif (registro[hoy]) return [];\n\nreturn [{\n  json: {\n    fecha: hoy,\n    dia: pieza.dia ?? null,\n    tema: pieza.tema ?? '(sin tema en el calendario)'\n  }\n}];"
       },
-      "id": "a1000000-0000-4000-8000-000000000004",
+      "id": "aa000000-0000-4000-8000-000000000004",
       "name": "Decidir si hay que rescatar",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [140, 300]
+      "position": [-200, 300]
     },
     {
       "parameters": {
@@ -119,82 +94,110 @@
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
-            {
-              "name": "Accept",
-              "value": "application/vnd.github+json"
-            },
-            {
-              "name": "X-GitHub-Api-Version",
-              "value": "2022-11-28"
-            },
-            {
-              "name": "User-Agent",
-              "value": "mpai-vigia"
-            }
+            { "name": "Accept", "value": "application/vnd.github+json" },
+            { "name": "X-GitHub-Api-Version", "value": "2022-11-28" },
+            { "name": "User-Agent", "value": "mpai-vigia" }
           ]
         },
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={{ JSON.stringify({ ref: 'main', inputs: { fecha: $json.fecha } }) }}",
         "options": {
+          "timeout": 20000,
           "response": {
-            "response": {
-              "neverError": false,
-              "fullResponse": true
-            }
+            "response": { "fullResponse": true, "neverError": true }
           }
         }
       },
-      "id": "a1000000-0000-4000-8000-000000000005",
+      "id": "aa000000-0000-4000-8000-000000000005",
       "name": "Disparar el workflow",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [360, 300],
-      "retryOnFail": true,
-      "maxTries": 3,
-      "waitBetweenTries": 10000,
-      "notes": "Responde 204 sin cuerpo cuando va bien. Un 404 aqui casi siempre es permiso de Actions que falta en el token, no un fichero inexistente."
+      "position": [20, 300],
+      "notes": "204 = aceptado (no devuelve cuerpo). neverError deja pasar 401/403/404 para que el nodo de comprobacion los convierta en aviso en vez de en un fallo mudo."
     },
     {
       "parameters": {
+        "amount": 6,
+        "unit": "minutes"
+      },
+      "id": "aa000000-0000-4000-8000-000000000006",
+      "name": "Esperar 6 minutos",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [240, 300],
+      "webhookId": "aa000000-0000-4000-8000-0000000000e6",
+      "notes": "Tiempo de sobra para que arranque el runner, suba 9 imagenes y publique."
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/markosstk21-byte/mpAI-Publicaciones/contents/registro.json",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Accept", "value": "application/vnd.github.raw" },
+            { "name": "X-GitHub-Api-Version", "value": "2022-11-28" },
+            { "name": "User-Agent", "value": "mpai-vigia" }
+          ]
+        },
+        "options": {
+          "timeout": 20000,
+          "response": {
+            "response": { "responseFormat": "text", "outputPropertyName": "cuerpo", "neverError": true }
+          }
+        }
+      },
+      "id": "aa000000-0000-4000-8000-000000000007",
+      "name": "Releer registro",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [460, 300],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "jsCode": "// Comprueba si el rescate funciono de verdad y redacta el aviso.\n// Siempre devuelve un item: si el flujo ha llegado hasta aqui es porque\n// hubo que intervenir, y eso se cuenta siempre.\n\nconst d = $('Decidir si hay que rescatar').first().json;\nconst codigo = $('Disparar el workflow').first().json.statusCode;\n\nlet publicado = false;\nlet idPublicacion = null;\nlet nota = '';\n\ntry {\n  const registro = JSON.parse($('Releer registro').first().json.cuerpo);\n  if (registro[d.fecha]) {\n    publicado = true;\n    idPublicacion = registro[d.fecha].id ?? null;\n  }\n} catch (e) {\n  nota = 'Ademas, el registro no se pudo releer: ' + e.message;\n}\n\nconst ok = codigo === 204 && publicado;\n\nlet cuerpo;\nif (ok) {\n  cuerpo = 'El cron de GitHub no habia publicado la pieza de hoy a las 18:00. El respaldo disparo el workflow y la publicacion salio.\\n\\n'\n    + 'Fecha: ' + d.fecha + '\\nPieza: dia ' + d.dia + ' - ' + d.tema + '\\nId de la publicacion: ' + idPublicacion + '\\n\\n'\n    + 'Si esto llega varios dias seguidos, el cron de GitHub no es fiable en este repositorio: adelanta la hora del respaldo o deja de depender de el.';\n} else if (codigo !== 204) {\n  cuerpo = 'El respaldo intento disparar el workflow y GitHub respondio ' + codigo + ' en vez de 204. NO se ha publicado nada.\\n\\n'\n    + 'Fecha: ' + d.fecha + '\\nPieza: dia ' + d.dia + ' - ' + d.tema + '\\n\\n'\n    + '401 o 403: el token de n8n ha caducado o le falta permiso de Actions.\\n'\n    + '404: el token no ve el repositorio, o el fichero publicar.yml ha cambiado de nombre.\\n'\n    + 'Hay que publicar a mano hoy.';\n} else {\n  cuerpo = 'El respaldo disparo el workflow (GitHub acepto con 204) pero seis minutos despues el registro sigue sin la pieza de hoy. NO consta publicada.\\n\\n'\n    + 'Fecha: ' + d.fecha + '\\nPieza: dia ' + d.dia + ' - ' + d.tema + '\\n\\n'\n    + 'Causas habituales, por orden: la variable PUBLICAR_DE_VERDAD no vale \"1\" y el workflow termina en modo revision sin publicar; el token de Meta ha caducado; alguna imagen no se sirve desde GitHub Pages.\\n'\n    + 'Mira el registro de la ejecucion en la pestana Actions.'\n    + (nota ? '\\n\\n' + nota : '');\n}\n\nreturn [{\n  json: {\n    estado: ok ? 'OK' : 'ALERTA',\n    asunto: (ok ? '[Instagram] Rescatado el dia ' : '[Instagram] FALLO: sigue sin publicarse el dia ') + d.fecha,\n    cuerpo\n  }\n}];"
+      },
+      "id": "aa000000-0000-4000-8000-000000000008",
+      "name": "Comprobar el resultado",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
         "sendTo": "marco@mpaitechnologies.es",
-        "subject": "=[Instagram] Rescatado el dia {{ $('Decidir si hay que rescatar').first().json.fecha }}",
+        "subject": "={{ $json.asunto }}",
         "emailType": "text",
-        "message": "=El cron de GitHub no habia publicado la pieza de hoy a las 18:00, asi que el respaldo ha disparado el workflow.\n\nFecha: {{ $('Decidir si hay que rescatar').first().json.fecha }}\nPieza: dia {{ $('Decidir si hay que rescatar').first().json.dia }} - {{ $('Decidir si hay que rescatar').first().json.tema }}\nRespuesta de GitHub: {{ $json.statusCode }}\n\nComprueba en Instagram que ha salido. Si esto llega varios dias seguidos, el cron de GitHub no es fiable en este repositorio y conviene adelantar la hora del respaldo.",
+        "message": "={{ $json.cuerpo }}",
         "options": {}
       },
-      "id": "a1000000-0000-4000-8000-000000000006",
+      "id": "aa000000-0000-4000-8000-000000000009",
       "name": "Avisar por correo",
       "type": "n8n-nodes-base.gmail",
       "typeVersion": 2.1,
-      "position": [580, 300],
-      "webhookId": "a1000000-0000-4000-8000-0000000000f6"
+      "position": [900, 300],
+      "webhookId": "aa000000-0000-4000-8000-0000000000f9"
     }
   ],
   "connections": {
-    "Cada dia a las 18:00": {
-      "main": [[{ "node": "Leer registro", "type": "main", "index": 0 }]]
-    },
-    "Leer registro": {
-      "main": [[{ "node": "Leer calendario", "type": "main", "index": 0 }]]
-    },
-    "Leer calendario": {
-      "main": [[{ "node": "Decidir si hay que rescatar", "type": "main", "index": 0 }]]
-    },
-    "Decidir si hay que rescatar": {
-      "main": [[{ "node": "Disparar el workflow", "type": "main", "index": 0 }]]
-    },
-    "Disparar el workflow": {
-      "main": [[{ "node": "Avisar por correo", "type": "main", "index": 0 }]]
-    }
+    "Cada dia a las 18:00": { "main": [[{ "node": "Leer registro", "type": "main", "index": 0 }]] },
+    "Leer registro": { "main": [[{ "node": "Leer calendario", "type": "main", "index": 0 }]] },
+    "Leer calendario": { "main": [[{ "node": "Decidir si hay que rescatar", "type": "main", "index": 0 }]] },
+    "Decidir si hay que rescatar": { "main": [[{ "node": "Disparar el workflow", "type": "main", "index": 0 }]] },
+    "Disparar el workflow": { "main": [[{ "node": "Esperar 6 minutos", "type": "main", "index": 0 }]] },
+    "Esperar 6 minutos": { "main": [[{ "node": "Releer registro", "type": "main", "index": 0 }]] },
+    "Releer registro": { "main": [[{ "node": "Comprobar el resultado", "type": "main", "index": 0 }]] },
+    "Comprobar el resultado": { "main": [[{ "node": "Avisar por correo", "type": "main", "index": 0 }]] }
   },
-  "settings": {
-    "timezone": "Europe/Madrid",
-    "executionOrder": "v1"
-  },
+  "settings": { "timezone": "Europe/Madrid", "executionOrder": "v1" },
   "pinData": {},
-  "meta": {
-    "instanceId": "mpai"
-  },
+  "meta": { "instanceId": "mpai" },
   "tags": []
 }
