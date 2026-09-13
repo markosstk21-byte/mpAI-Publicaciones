@@ -63,22 +63,6 @@
     ],
     "pie": "Los pilotos de IA no se caen por el modelo. Se caen por lo que nadie configuró:\n\n· qué pasa cuando el sistema no está seguro\n· dónde queda registrado lo que decidió\n· cuántos intentos puede hacer antes de parar\n\nEso es la diferencia entre una demo que impresiona en una reunión y algo que aguanta un\nlunes por la mañana.\n\n¿Probasteis algo que salió mal? Cuéntame qué pasó y te digo por dónde se rompió.\n\n#inteligenciaartificial #automatizacion #pymes #chatbot #agentesdeia"
   },
-  "2026-09-12": {
-    "dia": 6,
-    "tema": "Agente autónomo: lo que de verdad significa",
-    "imagenes": [
-      "carrusel-dia-06/slide-01.png",
-      "carrusel-dia-06/slide-02.png",
-      "carrusel-dia-06/slide-03.png",
-      "carrusel-dia-06/slide-04.png",
-      "carrusel-dia-06/slide-05.png",
-      "carrusel-dia-06/slide-06.png",
-      "carrusel-dia-06/slide-07.png",
-      "carrusel-dia-06/slide-08.png",
-      "carrusel-dia-06/slide-09.png"
-    ],
-    "pie": "«Agente autónomo» es la palabra de 2026. Casi nadie la usa bien.\n\nUn agente de verdad decide su propio siguiente paso, cada vez, sobre la marcha. Un flujo determinista lo decides tú una vez, al diseñarlo.\n\nLa pregunta que lo resuelve: ¿el orden de los pasos cambia según el caso, o es siempre el mismo? Si es siempre el mismo, no hace falta un agente — hace falta un flujo bien montado, que sale más barato y no da sorpresas.\n\nLa mitad de lo que hoy se vende como «agente autónomo» es justo eso: un flujo con un nombre de moda.\n\n¿A ti te han vendido un «agente» para algo que en realidad era siempre igual? Cuéntamelo.\n\n#agentesdeia #inteligenciaartificial #automatizacion #pymes #n8n #agentesautonomos"
-  },
   "2026-09-13": {
     "dia": 7,
     "tema": "Lo que nadie te cuenta del ROI de la IA",
@@ -174,6 +158,22 @@
       "carrusel-dia-12/slide-09.png"
     ],
     "pie": "Desde el 2 de agosto de 2026 se aplican las obligaciones de transparencia del Reglamento\nEuropeo de IA: si alguien habla con un sistema de IA, tiene que saberlo.\n\nEn la práctica, para la mayoría de negocios pequeños es una frase en el saludo del bot.\nNo es un proyecto. Pero conviene tenerla.\n\n¿Tienes un bot en la web? Escribe «BOT» en comentarios y te digo qué le falta al saludo.\n\nFuente: Comisión Europea, calendario de aplicación del Reglamento de IA. Si lees esto\nmeses después, verifica la redacción vigente.\n\n#aiact #normativa #chatbot #pymes #inteligenciaartificial"
+  },
+  "2026-09-19": {
+    "dia": 6,
+    "tema": "Agente autónomo: lo que de verdad significa",
+    "imagenes": [
+      "carrusel-dia-06/slide-01.png",
+      "carrusel-dia-06/slide-02.png",
+      "carrusel-dia-06/slide-03.png",
+      "carrusel-dia-06/slide-04.png",
+      "carrusel-dia-06/slide-05.png",
+      "carrusel-dia-06/slide-06.png",
+      "carrusel-dia-06/slide-07.png",
+      "carrusel-dia-06/slide-08.png",
+      "carrusel-dia-06/slide-09.png"
+    ],
+    "pie": "«Agente autónomo» es la palabra de 2026. Casi nadie la usa bien.\n\nUn agente de verdad decide su propio siguiente paso, cada vez, sobre la marcha. Un flujo determinista lo decides tú una vez, al diseñarlo.\n\nLa pregunta que lo resuelve: ¿el orden de los pasos cambia según el caso, o es siempre el mismo? Si es siempre el mismo, no hace falta un agente — hace falta un flujo bien montado, que sale más barato y no da sorpresas.\n\nLa mitad de lo que hoy se vende como «agente autónomo» es justo eso: un flujo con un nombre de moda.\n\n¿A ti te han vendido un «agente» para algo que en realidad era siempre igual? Cuéntamelo.\n\n#agentesdeia #inteligenciaartificial #automatizacion #pymes #n8n #agentesautonomos"
   },
   "2026-09-21": {
     "dia": 15,
