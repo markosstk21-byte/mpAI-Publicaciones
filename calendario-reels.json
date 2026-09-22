@@ -40,5 +40,17 @@
     "titulo": "Por qué contestar en un minuto cierra ventas",
     "video": "reels-dia/07-contestar-en-un-minuto.mp4",
     "pie": "El interés de un cliente no espera. Mientras tú contestas mañana, la competencia ya ha cerrado la venta hoy.\n\nY lo que arregla esto no es una IA compleja: es contestar rápido. Un mensaje automático en el primer minuto vale más que el sistema más sofisticado que tarda una hora.\n\nProducción, venta cerrada, capacidad de crecer: se consiguen con velocidad de respuesta, no con complejidad.\n\nMarco · MPAI Technologies\nAutomatización y agentes de IA para pymes.\n\n#automatizacion #inteligenciaartificial #pymes #asesorias #ventas"
+  },
+  "2026-10-09": {
+    "id": "08-verdadero-roi",
+    "titulo": "El verdadero ROI de automatizar",
+    "video": "reels-dia/08-verdadero-roi.mp4",
+    "pie": "«317% de retorno.» Es un ejemplo del vídeo para explicar cómo se mide el impacto, no una cifra que se pueda prometer: cada proceso tiene su propia cuenta, y esa cuenta se hace con tus números, no con los de un vídeo genérico.\n\nLo que sí es fijo es la fórmula: inversión inicial frente a retorno mensual real. Si no puedes rellenar esos dos huecos con datos tuyos, todavía no sabes si te compensa.\n\nMarco · MPAI Technologies\nAutomatización y agentes de IA para pymes.\n\n#automatizacion #inteligenciaartificial #pymes #asesorias #ROI"
+  },
+  "2026-10-11": {
+    "id": "09-reglas-de-seguridad",
+    "titulo": "Reglas de seguridad antes de dar acceso a un agente",
+    "video": "reels-dia/09-reglas-de-seguridad.mp4",
+    "pie": "Tres reglas antes de dar acceso a un agente a tus sistemas: que hable con tus datos a través de una capa intermedia, nunca directo; que no pueda escribir en la base de datos sin pasar por ahí; y que las tareas sensibles pidan confirmación humana.\n\nY una que ya es ley, no criterio: desde agosto de 2026 el Reglamento Europeo de IA exige que el usuario sepa que habla con un bot. Una frase en el saludo inicial basta, y no ponerla ya no es solo mala práctica.\n\nMarco · MPAI Technologies\nAutomatización y agentes de IA para pymes.\n\n#automatizacion #inteligenciaartificial #pymes #asesorias #seguridad"
   }
 }
