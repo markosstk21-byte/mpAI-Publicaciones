@@ -240,36 +240,36 @@
     "pie": "Esta semana necesitaba un sistema que hiciera cuatro cosas: leer, filtrar, clasificar y avisar. Podía haberlo montado como un agente de IA. No lo hice.\n\nLa pregunta que lo decide es una sola: ¿el orden de los pasos cambia según el caso? Si no cambia, no hay nada que decidir — y un agente es, literalmente, algo que decide.\n\nAsí que monté un flujo, con el modelo en un único punto haciendo una sola cosa: clasificar. Una llamada, no una conversación.\n\nLo que eso ahorra: un agente consulta al modelo en cada paso que da, y cada consulta se paga. Lo que gana: sé exactamente qué va a hacer el lunes por la mañana. Un agente puede sorprenderte, y una sorpresa en producción nunca es buena.\n\n¿Cuándo sí hace falta un agente? Cuando el orden depende del caso y no lo puedes escribir de antemano. Pasa. Mucho menos de lo que se vende.\n\nLa prueba cabe en una hoja: escribe los pasos de tu proceso. Si salen numerados del uno al seis, no necesitas un agente.\n\nEscríbelos y dime cuántos te han salido.\n\n#agentesdeia #automatizacion #n8n #pymes #inteligenciaartificial"
   },
   "2026-09-24": {
-    "dia": 15,
-    "tema": "Cuando digo que no",
+    "dia": 31,
+    "tema": "Si no lo puedes comprobar, no es un dato",
     "imagenes": [
-      "carrusel-dia-15/slide-01.png",
-      "carrusel-dia-15/slide-02.png",
-      "carrusel-dia-15/slide-03.png",
-      "carrusel-dia-15/slide-04.png",
-      "carrusel-dia-15/slide-05.png",
-      "carrusel-dia-15/slide-06.png",
-      "carrusel-dia-15/slide-07.png",
-      "carrusel-dia-15/slide-08.png",
-      "carrusel-dia-15/slide-09.png"
+      "carrusel-dia-31/slide-01.png",
+      "carrusel-dia-31/slide-02.png",
+      "carrusel-dia-31/slide-03.png",
+      "carrusel-dia-31/slide-04.png",
+      "carrusel-dia-31/slide-05.png",
+      "carrusel-dia-31/slide-06.png",
+      "carrusel-dia-31/slide-07.png",
+      "carrusel-dia-31/slide-08.png",
+      "carrusel-dia-31/slide-09.png"
     ],
-    "pie": "«Quiero meter IA en mi empresa» no es un encargo. Es una intención.\n\nNo se puede presupuestar y, sobre todo, no se puede entregar: acabas con una herramienta\nque nadie usa y con la sensación de que te han vendido humo.\n\nLo que sí se puede hacer es mirar un proceso concreto y decidir si merece la pena tocarlo.\nA veces sale que no.\n\n¿A ti te han vendido alguna vez algo que no necesitabas? Cuéntamelo.\n\n#consultoria #inteligenciaartificial #pymes #automatizacion"
+    "pie": "Esta semana revisé mi propia documentación contra lo que hay de verdad en el disco. Cinco cosas que daba por hechas no existían.\n\nUna carpeta que un documento situaba en un sitio donde no está. Tres tareas automáticas descritas como «activas» desde agosto, sin que ninguna estuviera creada. Y la peor: escribí un aviso de errores que ya existía, por no mirar la carpeta antes de ponerme.\n\nNo lo cuento como anécdota. Lo cuento porque es exactamente lo que me encuentro en las empresas: lo que uno cree que hace su sistema y lo que hace de verdad no son lo mismo, y nadie lo comprueba hasta que falla.\n\nPor eso un diagnóstico no es una reunión de ideas. Es abrir las cosas y mirar.\n\nY por eso, cuando no puedo comprobar algo, te digo que no lo sé. Es lo más barato que te voy a ofrecer.\n\n¿Cuándo fue la última vez que comprobaste que un proceso tuyo hace lo que crees que hace?\n\n#automatizacion #inteligenciaartificial #pymes #procesos #criterio"
   },
   "2026-09-25": {
-    "dia": 16,
-    "tema": "Seis palabras traducidas",
+    "dia": 32,
+    "tema": "El error que te dice lo que no es",
     "imagenes": [
-      "carrusel-dia-16/slide-01.png",
-      "carrusel-dia-16/slide-02.png",
-      "carrusel-dia-16/slide-03.png",
-      "carrusel-dia-16/slide-04.png",
-      "carrusel-dia-16/slide-05.png",
-      "carrusel-dia-16/slide-06.png",
-      "carrusel-dia-16/slide-07.png",
-      "carrusel-dia-16/slide-08.png",
-      "carrusel-dia-16/slide-09.png"
+      "carrusel-dia-32/slide-01.png",
+      "carrusel-dia-32/slide-02.png",
+      "carrusel-dia-32/slide-03.png",
+      "carrusel-dia-32/slide-04.png",
+      "carrusel-dia-32/slide-05.png",
+      "carrusel-dia-32/slide-06.png",
+      "carrusel-dia-32/slide-07.png",
+      "carrusel-dia-32/slide-08.png",
+      "carrusel-dia-32/slide-09.png"
     ],
-    "pie": "Agente, orquestador, llamada a herramienta, RAG, MCP y ejecución. Las seis traducidas al\nespañol de tu negocio.\n\nFíjate en la última: ejecución es una vuelta completa del flujo, y es la unidad que te van\na facturar. Si nadie te la ha explicado, es que nadie ha calculado cuánto te va a costar\na ti.\n\nGuárdatelo para no volver a asentir por educación en una reunión.\n\n#inteligenciaartificial #agentesdeia #rag #mcp #pymes #automatizacion"
+    "pie": "Un sistema me respondió que un dato no existía. Existía. Un minuto antes lo había devuelto sin problema.\n\nLo que había pasado no era eso: le había preguntado demasiadas veces seguidas y me había cortado el acceso. Pero en vez de responder «frena, estás preguntando mucho», respondió «esto no existe».\n\nSon dos averías distintas con la misma cara, y llevan a sitios opuestos. «No existe» te manda a revisar tus datos durante una hora. «Demasiadas peticiones» te manda a esperar cinco minutos.\n\nLa comprobación que lo resuelve dura treinta segundos: pregunta por algo que seguro existe. Si eso también falla, el problema no es tu dato.\n\nY lo que no funciona es reintentar más rápido. Tres intentos en quince segundos caen dentro del mismo castigo.\n\nEsto le pasa a tu empresa cada vez que uno de tus sistemas habla con otro por internet. El mensaje de error casi nunca dice la verdad.\n\n¿Cuántas horas has perdido persiguiendo un error que decía otra cosa?\n\n#automatizacion #integraciones #inteligenciaartificial #pymes #procesos"
   },
   "2026-09-26": {
     "dia": 34,
@@ -448,20 +448,20 @@
     "pie": "MCP, en cristiano: un formato común para conectar herramientas a un modelo, en vez de\nprogramar cada conexión a medida.\n\nTraducido a tu factura: menos horas de integración y menos dependencia de quien te lo montó.\n\nPregunta siempre si usan un estándar o una conexión propia. Esa respuesta te dice cuánto\nvas a depender de ellos dentro de dos años.\n\n#mcp #inteligenciaartificial #integraciones #pymes #automatizacion"
   },
   "2026-10-07": {
-    "dia": 27,
-    "tema": "Lo que le pido a una herramienta",
+    "dia": 13,
+    "tema": "Casi nadie ha empezado",
     "imagenes": [
-      "carrusel-dia-27/slide-01.png",
-      "carrusel-dia-27/slide-02.png",
-      "carrusel-dia-27/slide-03.png",
-      "carrusel-dia-27/slide-04.png",
-      "carrusel-dia-27/slide-05.png",
-      "carrusel-dia-27/slide-06.png",
-      "carrusel-dia-27/slide-07.png",
-      "carrusel-dia-27/slide-08.png",
-      "carrusel-dia-27/slide-09.png"
+      "carrusel-dia-13/slide-01.png",
+      "carrusel-dia-13/slide-02.png",
+      "carrusel-dia-13/slide-03.png",
+      "carrusel-dia-13/slide-04.png",
+      "carrusel-dia-13/slide-05.png",
+      "carrusel-dia-13/slide-06.png",
+      "carrusel-dia-13/slide-07.png",
+      "carrusel-dia-13/slide-08.png",
+      "carrusel-dia-13/slide-09.png"
     ],
-    "pie": "Seis cosas que compruebo de una herramienta antes de meterla en el negocio de alguien.\nNinguna es una función bonita:\n\n1. ¿Te llevas tus datos al salir, y en qué formato?\n2. ¿Dónde se guardan y con quién se comparten?\n3. ¿Qué cuesta cuando lo uses el doble, que es lo que pasa si funciona?\n4. ¿Avisa cuando se rompe, o te enteras tú?\n5. ¿Se conecta con lo que ya tienes, o hay que copiar a mano entre dos programas?\n6. ¿Quién está detrás y desde cuándo?\n\nTodas las herramientas enseñan lo que hacen. Casi ninguna enseña qué pasa el día que falla\no el día que te vas.\n\nMándaselas a quien te la quiera vender. Las respuestas valen más que la demostración.\n\n#herramientas #pymes #automatizacion #criterio #inteligenciaartificial"
+    "pie": "El 86,6% de las empresas españolas de menos de diez empleados no usa inteligencia\nartificial. Ninguna. Nada.\n\nLos datos son del INE, encuesta de uso de TIC y comercio electrónico en las empresas,\nprimer trimestre de 2025:\n\n· menos de 10 empleados → la usa el 13,4%\n· 10 empleados o más → la usa el 21,1%\n\nAsí que cuando alguien te diga que tu competencia lleva dos años con esto, los números\ndicen que probablemente no sea verdad. «Te vas a quedar atrás» funciona muy bien para\nfirmar contratos y muy mal para elegir bien.\n\nLa ventaja no está en empezar pronto. Está en empezar por un proceso que te cuesta dinero\ntodos los meses.\n\n#datos #pymes #inteligenciaartificial #automatizacion #españa"
   },
   "2026-10-08": {
     "dia": 28,
@@ -511,20 +511,20 @@
     ],
     "pie": "Antes de automatizarte nada, alguien tiene que mirar cómo trabajas. De ahí sales con seis\ncosas:\n\n· el mapa de tu proceso tal y como es hoy (no como crees que es)\n· dónde se van las horas, con números tuyos\n· qué se puede automatizar ya, sin tocar lo que funciona\n· qué NO merece la pena, con el motivo\n· una estimación de coste antes de comprometer nada\n· y el orden: qué primero y qué puede esperar un año\n\nY lo importante: vale por sí solo. Aunque después no trabajes conmigo, el mapa y las\ncuentas te los quedas tú y puedes llevártelos a quien quieras.\n\nSi quieres ver cómo sería el tuyo, escribe «DIAGNÓSTICO» en comentarios.\n\n#diagnostico #automatizacion #pymes #asesorias #consultoria"
   },
-  "2026-10-07": {
-    "dia": 13,
-    "tema": "Casi nadie ha empezado",
+  "2026-10-11": {
+    "dia": 27,
+    "tema": "Lo que le pido a una herramienta",
     "imagenes": [
-      "carrusel-dia-13/slide-01.png",
-      "carrusel-dia-13/slide-02.png",
-      "carrusel-dia-13/slide-03.png",
-      "carrusel-dia-13/slide-04.png",
-      "carrusel-dia-13/slide-05.png",
-      "carrusel-dia-13/slide-06.png",
-      "carrusel-dia-13/slide-07.png",
-      "carrusel-dia-13/slide-08.png",
-      "carrusel-dia-13/slide-09.png"
+      "carrusel-dia-27/slide-01.png",
+      "carrusel-dia-27/slide-02.png",
+      "carrusel-dia-27/slide-03.png",
+      "carrusel-dia-27/slide-04.png",
+      "carrusel-dia-27/slide-05.png",
+      "carrusel-dia-27/slide-06.png",
+      "carrusel-dia-27/slide-07.png",
+      "carrusel-dia-27/slide-08.png",
+      "carrusel-dia-27/slide-09.png"
     ],
-    "pie": "El 86,6% de las empresas españolas de menos de diez empleados no usa inteligencia\nartificial. Ninguna. Nada.\n\nLos datos son del INE, encuesta de uso de TIC y comercio electrónico en las empresas,\nprimer trimestre de 2025:\n\n· menos de 10 empleados → la usa el 13,4%\n· 10 empleados o más → la usa el 21,1%\n\nAsí que cuando alguien te diga que tu competencia lleva dos años con esto, los números\ndicen que probablemente no sea verdad. «Te vas a quedar atrás» funciona muy bien para\nfirmar contratos y muy mal para elegir bien.\n\nLa ventaja no está en empezar pronto. Está en empezar por un proceso que te cuesta dinero\ntodos los meses.\n\n#datos #pymes #inteligenciaartificial #automatizacion #españa"
+    "pie": "Seis cosas que compruebo de una herramienta antes de meterla en el negocio de alguien.\nNinguna es una función bonita:\n\n1. ¿Te llevas tus datos al salir, y en qué formato?\n2. ¿Dónde se guardan y con quién se comparten?\n3. ¿Qué cuesta cuando lo uses el doble, que es lo que pasa si funciona?\n4. ¿Avisa cuando se rompe, o te enteras tú?\n5. ¿Se conecta con lo que ya tienes, o hay que copiar a mano entre dos programas?\n6. ¿Quién está detrás y desde cuándo?\n\nTodas las herramientas enseñan lo que hacen. Casi ninguna enseña qué pasa el día que falla\no el día que te vas.\n\nMándaselas a quien te la quiera vender. Las respuestas valen más que la demostración.\n\n#herramientas #pymes #automatizacion #criterio #inteligenciaartificial"
   }
 }
