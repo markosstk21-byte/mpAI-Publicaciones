@@ -16,5 +16,11 @@
     "titulo": "Las automatizaciones de IA más rentables para pymes",
     "video": "reels-dia/03-automatizaciones-rentables.mp4",
     "pie": "Facturas escaneadas —número, fecha, importe, proveedor— extraídas solas y volcadas a contabilidad sin teclearlas a mano.\n\n(La factura y la cifra de conversiones que salen en el vídeo son un ejemplo ilustrativo para explicar el proceso, no un resultado real de ningún cliente: Marco no tiene casos ni métricas propias todavía.)\n\nLo que sí es real: las tareas que más horas se comen son las primeras que merece la pena mirar.\n\nMarco · MPAI Technologies\nAutomatización y agentes de IA para pymes.\n\n#automatizacion #inteligenciaartificial #pymes #asesorias #facturacion"
+  },
+  "2026-10-01": {
+    "id": "04-sin-malgastar-en-ia",
+    "titulo": "Cómo automatizar tu empresa sin malgastar en IA",
+    "video": "reels-dia/04-sin-malgastar-en-ia.mp4",
+    "pie": "Una bandeja de entrada con facturas uniformes y peticiones variables mezcladas: no todo necesita el mismo tratamiento.\n\nPrimero un filtro de reglas, gratis y para lo que ya sabes reconocer. Solo lo ambiguo —lo que el filtro no clasifica seguro— pasa al modelo de IA, que cuesta y tarda más.\n\nAsí es como se automatiza sin malgastar: no todo lo que entra necesita un modelo, y pagar IA para lo que resuelve una regla es tirar el dinero.\n\nMarco · MPAI Technologies\nAutomatización y agentes de IA para pymes.\n\n#automatizacion #inteligenciaartificial #pymes #asesorias #n8n"
   }
 }
