@@ -22,5 +22,23 @@
     "titulo": "Cómo automatizar tu empresa sin malgastar en IA",
     "video": "reels-dia/04-sin-malgastar-en-ia.mp4",
     "pie": "Una bandeja de entrada con facturas uniformes y peticiones variables mezcladas: no todo necesita el mismo tratamiento.\n\nPrimero un filtro de reglas, gratis y para lo que ya sabes reconocer. Solo lo ambiguo —lo que el filtro no clasifica seguro— pasa al modelo de IA, que cuesta y tarda más.\n\nAsí es como se automatiza sin malgastar: no todo lo que entra necesita un modelo, y pagar IA para lo que resuelve una regla es tirar el dinero.\n\nMarco · MPAI Technologies\nAutomatización y agentes de IA para pymes.\n\n#automatizacion #inteligenciaartificial #pymes #asesorias #n8n"
+  },
+  "2026-10-03": {
+    "id": "05-documentos-privados",
+    "titulo": "Cómo la IA lee tus documentos privados",
+    "video": "reels-dia/05-documentos-privados.mp4",
+    "pie": "Tus documentos no salen de donde están. El sistema solo extrae el párrafo que hace falta —«el empleado dispone de 22 días hábiles de vacaciones»— y responde con esa cita delante, nada más.\n\nSi le preguntas algo que ese párrafo no contesta, no se lo inventa: dice que no está.\n\nUn convenio, un manual interno, un contrato: la respuesta sale de tus propios documentos, no de la memoria del modelo.\n\nMarco · MPAI Technologies\nAutomatización y agentes de IA para pymes.\n\n#automatizacion #inteligenciaartificial #pymes #asesorias #RAG"
+  },
+  "2026-10-05": {
+    "id": "06-chatbot-no-es-agente",
+    "titulo": "Por qué tu chatbot no es un agente",
+    "video": "reels-dia/06-chatbot-no-es-agente.mp4",
+    "pie": "Un loro digital repite lo que le dices. Un agente de verdad puede ver tu agenda, decirte si hay hueco a las 10:30 o a las 16:15, y —si tú se lo permites— moverlo él mismo.\n\nAhí está la diferencia real: no es lo elocuente que suene, es qué puede tocar. Lectura, modificación, aprobación: cada permiso se decide antes, no se descubre después.\n\nSi tu «agente» solo contesta y nunca actúa sobre nada tuyo, es un chatbot con otro nombre.\n\nMarco · MPAI Technologies\nAutomatización y agentes de IA para pymes.\n\n#automatizacion #inteligenciaartificial #pymes #asesorias #agentesdeia"
+  },
+  "2026-10-07": {
+    "id": "07-contestar-en-un-minuto",
+    "titulo": "Por qué contestar en un minuto cierra ventas",
+    "video": "reels-dia/07-contestar-en-un-minuto.mp4",
+    "pie": "El interés de un cliente no espera. Mientras tú contestas mañana, la competencia ya ha cerrado la venta hoy.\n\nY lo que arregla esto no es una IA compleja: es contestar rápido. Un mensaje automático en el primer minuto vale más que el sistema más sofisticado que tarda una hora.\n\nProducción, venta cerrada, capacidad de crecer: se consiguen con velocidad de respuesta, no con complejidad.\n\nMarco · MPAI Technologies\nAutomatización y agentes de IA para pymes.\n\n#automatizacion #inteligenciaartificial #pymes #asesorias #ventas"
   }
 }
