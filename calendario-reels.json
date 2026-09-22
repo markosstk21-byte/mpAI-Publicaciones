@@ -1,0 +1,20 @@
+{
+  "2026-09-25": {
+    "id": "01-rag-documentos",
+    "titulo": "Cómo RAG lee tus documentos sin inventarse datos",
+    "video": "reels-dia/01-rag-documentos.mp4",
+    "pie": "«¿Puedo venir en pantalón corto?» En un sistema con RAG, la respuesta no la da el modelo de memoria: busca primero en tus documentos (un manual, una normativa) y contesta con la fuente delante.\n\nNada de inventarse la política de la empresa. Si no está escrito en ningún sitio, el sistema no debería responder que sí.\n\nUn manual, una normativa, doscientos contratos: la respuesta en segundos, y siempre puedes comprobar de dónde ha salido.\n\nMarco · MPAI Technologies\nAutomatización y agentes de IA para pymes.\n\n#automatizacion #inteligenciaartificial #pymes #asesorias #RAG"
+  },
+  "2026-09-27": {
+    "id": "02-cuatro-automatizaciones",
+    "titulo": "Cuatro automatizaciones que sí rentabilizan tu pyme",
+    "video": "reels-dia/02-cuatro-automatizaciones.mp4",
+    "pie": "Una llamada perdida no tiene por qué perderse. Un SMS automático con el enlace justo —agenda, presupuesto, lo que toque— y el contacto sigue vivo sin que nadie tenga que acordarse de llamar.\n\nAntes de automatizar nada, lo primero es saber qué proceso es y por qué se repite. No se automatiza porque sí: se automatiza lo que ya sabes hacer a mano y te come horas.\n\nMarco · MPAI Technologies\nAutomatización y agentes de IA para pymes.\n\n#automatizacion #inteligenciaartificial #pymes #asesorias #leads"
+  },
+  "2026-09-29": {
+    "id": "03-automatizaciones-rentables",
+    "titulo": "Las automatizaciones de IA más rentables para pymes",
+    "video": "reels-dia/03-automatizaciones-rentables.mp4",
+    "pie": "Facturas escaneadas —número, fecha, importe, proveedor— extraídas solas y volcadas a contabilidad sin teclearlas a mano.\n\n(La factura y la cifra de conversiones que salen en el vídeo son un ejemplo ilustrativo para explicar el proceso, no un resultado real de ningún cliente: Marco no tiene casos ni métricas propias todavía.)\n\nLo que sí es real: las tareas que más horas se comen son las primeras que merece la pena mirar.\n\nMarco · MPAI Technologies\nAutomatización y agentes de IA para pymes.\n\n#automatizacion #inteligenciaartificial #pymes #asesorias #facturacion"
+  }
+}

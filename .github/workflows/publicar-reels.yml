@@ -1,0 +1,57 @@
+name: Publicar reel del día
+
+on:
+  schedule:
+    # Mismo criterio que el de carruseles: tres intentos, minutos no redondos,
+    # porque el evento `schedule` de GitHub es "mejor esfuerzo", no garantizado.
+    # A una hora distinta de los carruseles (14:xx) para no competir con esa
+    # publicación y para que, si un día caen los dos, no salgan pegados.
+    - cron: "11 16 * * *"
+    - cron: "29 18 * * *"
+    - cron: "47 20 * * *"
+  workflow_dispatch:
+    inputs:
+      fecha:
+        description: "Fecha a forzar (AAAA-MM-DD). Vacío = hoy."
+        required: false
+        default: ""
+
+# Cerrojo propio, distinto al de carruseles: un reel y un carrusel el mismo día
+# no compiten entre sí (son ficheros de registro distintos), pero dos disparos
+# del propio flujo de reels sí deben esperarse el uno al otro.
+concurrency:
+  group: publicar-instagram-reels
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Publicar
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          BASE_URL: ${{ vars.BASE_URL }}
+          PUBLICAR_REELS_DE_VERDAD: ${{ vars.PUBLICAR_REELS_DE_VERDAD }}
+          FECHA_FORZAR: ${{ github.event.inputs.fecha }}
+        run: python publicar-reels.py
+
+      - name: Guardar el registro
+        run: |
+          if [[ -n "$(git status --porcelain registro-reels.json)" ]]; then
+            git config user.name "publicador"
+            git config user.email "publicador@users.noreply.github.com"
+            git add registro-reels.json
+            git commit -m "Registro del reel publicado el $(date +%F)"
+            git pull --rebase --autostash
+            git push
+          fi
