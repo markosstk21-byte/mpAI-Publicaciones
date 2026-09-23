@@ -1,0 +1,74 @@
+name: Publicar en LinkedIn
+
+on:
+  schedule:
+    # Tres intentos por la mañana, por el mismo motivo que en Instagram: el evento
+    # `schedule` de GitHub es esfuerzo razonable, no garantía, y ya se perdió un día.
+    # publicar-linkedin.py es idempotente por registro-linkedin.json.
+    # Minutos no redondos a propósito: el comienzo de la hora es el momento de más carga.
+    - cron: "9 7 * * *"
+    - cron: "27 9 * * *"
+    - cron: "51 11 * * *"
+    # Lunes: comprobación de caducidad del token. Va aparte y falla a propósito
+    # cuando quedan menos de 7 días, para que GitHub te mande el correo.
+    - cron: "13 8 * * 1"
+  workflow_dispatch:
+    inputs:
+      fecha:
+        description: "Fecha a forzar (AAAA-MM-DD). Vacío = hoy."
+        required: false
+        default: ""
+
+concurrency:
+  group: publicar-linkedin
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    if: github.event.schedule != '13 8 * * 1'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Publicar
+        env:
+          LI_TOKEN: ${{ secrets.LI_TOKEN }}
+          LI_PERSON_URN: ${{ secrets.LI_PERSON_URN }}
+          LI_TOKEN_EXPIRA: ${{ vars.LI_TOKEN_EXPIRA }}
+          BASE_URL: ${{ vars.BASE_URL }}
+          PUBLICAR_DE_VERDAD: ${{ vars.PUBLICAR_LINKEDIN_DE_VERDAD }}
+          FECHA_FORZAR: ${{ github.event.inputs.fecha }}
+        run: python publicar-linkedin.py
+
+      - name: Guardar el registro
+        run: |
+          if [[ -n "$(git status --porcelain registro-linkedin.json)" ]]; then
+            git config user.name "publicador"
+            git config user.email "publicador@users.noreply.github.com"
+            git add registro-linkedin.json
+            git commit -m "Registro de LinkedIn del $(date +%F)"
+            git pull --rebase --autostash
+            git push
+          fi
+
+  avisar-token:
+    if: github.event.schedule == '13 8 * * 1'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Comprobar cuánto le queda al token
+        env:
+          LI_TOKEN_EXPIRA: ${{ vars.LI_TOKEN_EXPIRA }}
+        run: python publicar-linkedin.py --comprobar-token

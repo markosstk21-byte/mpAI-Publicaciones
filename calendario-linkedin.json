@@ -1,0 +1,230 @@
+{
+  "2026-10-11": {
+    "dia": 35,
+    "tema": "Cinco señales de automatización",
+    "imagenes": [
+      "carrusel-dia-35/slide-01.png",
+      "carrusel-dia-35/slide-02.png",
+      "carrusel-dia-35/slide-03.png",
+      "carrusel-dia-35/slide-04.png",
+      "carrusel-dia-35/slide-05.png",
+      "carrusel-dia-35/slide-06.png",
+      "carrusel-dia-35/slide-07.png",
+      "carrusel-dia-35/slide-08.png",
+      "carrusel-dia-35/slide-09.png"
+    ],
+    "texto": "Hay cinco señales que dicen si un proceso de tu empresa merece automatizarse. Con tres, ya sale a cuenta.\n\n1. Lo hacéis igual todas las veces. Si cada caso se decide distinto, no es un proceso: es un criterio, y eso todavía no se automatiza bien.\n\n2. Pasa por tres sitios distintos. Correo, hoja de cálculo y programa de gestión. Cada salto entre herramientas es un copiar y pegar que algún día se cae.\n\n3. Os come más de dos horas al mes. Por debajo de ahí, el ahorro no paga ni la conversación de montarlo.\n\n4. Cuando sale mal, os enteráis tarde. Una factura mal apuntada aparece en el cierre del trimestre, y ahí corregirla cuesta varias veces más que en el momento.\n\n5. Nadie quiere hacerlo. El proceso que todos esquivan es el que peor se hace, y el que más agradece el equipo que desaparezca.\n\nLo interesante no es la lista, es el orden: si un proceso cumple las cinco, probablemente lleva años costando dinero sin que aparezca en ninguna cuenta.\n\n¿Cuál es el proceso de tu empresa que cumpliría las cinco?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-12": {
+    "dia": 36,
+    "tema": "Lo que cuesta una automatización",
+    "imagenes": [
+      "carrusel-dia-36/slide-01.png",
+      "carrusel-dia-36/slide-02.png",
+      "carrusel-dia-36/slide-03.png",
+      "carrusel-dia-36/slide-04.png",
+      "carrusel-dia-36/slide-05.png",
+      "carrusel-dia-36/slide-06.png",
+      "carrusel-dia-36/slide-07.png",
+      "carrusel-dia-36/slide-08.png",
+      "carrusel-dia-36/slide-09.png"
+    ],
+    "texto": "Una automatización no tiene un precio. Tiene tres líneas, y en la mayoría de presupuestos solo aparece una.\n\nMontarla. Se paga una vez y es la parte que se enseña, la que se compara entre proveedores.\n\nEjecutarla. Cada vuelta completa del flujo cuesta céntimos. Multiplica esos céntimos por las veces que el proceso ocurre al mes y ahí está el coste que de verdad se repite.\n\nMantenerla. El día que un proveedor cambia su web o su API, tu flujo se rompe. Eso hay que arreglarlo, y alguien lo cobra. Si nadie lo cobra, es que nadie lo va a arreglar.\n\nCuando un presupuesto solo trae la primera línea, no es más barato: es que falta información. Y la información que falta siempre aparece después, normalmente en el peor momento.\n\nTres preguntas que puedes hacer antes de firmar cualquier cosa:\n\n· ¿Cuánto cuesta cada ejecución?\n· ¿Qué pasa el día que se rompa, y quién lo arregla?\n· ¿En qué cuenta viven los flujos, en la mía o en la vuestra?\n\nLas tres se contestan en un minuto. Y la cara que pone quien responde dice tanto como la respuesta.\n\n¿Te han desglosado alguna vez las tres líneas en una propuesta?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-13": {
+    "dia": 37,
+    "tema": "Automatización o agente",
+    "imagenes": [
+      "carrusel-dia-37/slide-01.png",
+      "carrusel-dia-37/slide-02.png",
+      "carrusel-dia-37/slide-03.png",
+      "carrusel-dia-37/slide-04.png",
+      "carrusel-dia-37/slide-05.png",
+      "carrusel-dia-37/slide-06.png",
+      "carrusel-dia-37/slide-07.png",
+      "carrusel-dia-37/slide-08.png"
+    ],
+    "texto": "«¿Necesitamos un agente de IA?» Casi siempre la respuesta correcta es otra pregunta.\n\nAutomatización y agente no compiten: son escalones distintos de la misma escalera.\n\n1. Automatización sin IA\n2. Clasificar o extraer datos con un modelo\n3. Agente que responde usando vuestros documentos\n4. Agente que además actúa en vuestros sistemas\n5. Orquestador que reparte trabajo entre varios agentes\n\nLa diferencia de fondo es sencilla: si hay que repetir, es automatización. Si hay que decidir algo distinto en cada caso, entonces sí, es un agente.\n\nLa mayor parte de lo que una pyme pide como «un agente» se resuelve en el primer escalón. Funciona, se entiende y cuesta una fracción.\n\nY hay una regla de subida que ahorra bastante dinero: se sube un escalón cuando el de abajo ya funciona solo. Subir antes de tiempo no se nota en la demo; se nota tres meses después, cuando algo falla y nadie sabe qué pieza falló.\n\n¿En qué escalón dirías que está tu empresa hoy?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-14": {
+    "dia": 38,
+    "tema": "Siete tareas del primer mes",
+    "imagenes": [
+      "carrusel-dia-38/slide-01.png",
+      "carrusel-dia-38/slide-02.png",
+      "carrusel-dia-38/slide-03.png",
+      "carrusel-dia-38/slide-04.png",
+      "carrusel-dia-38/slide-05.png",
+      "carrusel-dia-38/slide-06.png",
+      "carrusel-dia-38/slide-07.png",
+      "carrusel-dia-38/slide-08.png",
+      "carrusel-dia-38/slide-09.png"
+    ],
+    "texto": "Si una pyme me pregunta por dónde empezar, nunca es por lo vistoso. Es por lo que pasa muchas veces al día y no le gusta a nadie.\n\nSiete tareas que se pueden automatizar el primer mes, sin agentes:\n\nDel correo\n· Clasificar y repartir lo que entra\n· Contestar fuera de horario\n· Avisar de lo que es urgente de verdad\n\nDel papeleo\n· Extraer los datos de las facturas\n· Renombrar y archivar documentos\n\nDel cliente\n· Recordatorio de cita\n· Seguimiento del presupuesto que no ha tenido respuesta\n\nLas siete tienen algo en común: se montan con automatización normal. Un modelo aparece solo en los casos dudosos, y aun así lo dudoso se manda a revisar en vez de adivinarlo.\n\nY el consejo que más veces repito: empieza por una sola. La que más veces pase al día, no la que mejor queda al contarla. Y no toques la siguiente hasta que esa lleve un mes funcionando sin que nadie la mire.\n\n¿Cuál de las siete os quitaría más horas esta semana?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-15": {
+    "dia": 39,
+    "tema": "Automatizar un proceso roto",
+    "imagenes": [
+      "carrusel-dia-39/slide-01.png",
+      "carrusel-dia-39/slide-02.png",
+      "carrusel-dia-39/slide-03.png",
+      "carrusel-dia-39/slide-04.png",
+      "carrusel-dia-39/slide-05.png",
+      "carrusel-dia-39/slide-06.png",
+      "carrusel-dia-39/slide-07.png",
+      "carrusel-dia-39/slide-08.png"
+    ],
+    "texto": "Automatizar un proceso que funciona mal no lo arregla. Lo rompe más rápido.\n\nUn error hecho a mano es un error. El mismo error automatizado son todos, y llegan al cliente antes de que nadie mire.\n\nEl orden que funciona es este:\n\n1. Dibujar el proceso tal como es hoy, no como debería ser.\n2. Quitar los pasos que no aportan nada.\n3. Arreglar lo que falla.\n4. Y entonces, automatizar.\n\nEl segundo paso es el que más tiempo devuelve y no cuesta un euro de tecnología. En bastantes casos, ahí se acaba el proyecto: el proceso ya no duele y no hace falta automatizar nada.\n\nTres señales de que un proceso está roto y conviene mirarlo antes de tocarlo:\n\n· Nadie de la empresa sabe explicarlo entero de principio a fin.\n· Hay un paso que existe «porque siempre se ha hecho así».\n· Alguien lo corrige a mano al final, todos los meses.\n\nPor eso lo primero que entrego en un proyecto es un diagnóstico del proceso, no una herramienta. Vender la herramienta es lo fácil.\n\n¿Habéis dibujado alguna vez uno de vuestros procesos entero, en un folio?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-16": {
+    "dia": 40,
+    "tema": "Lo que pido antes de empezar",
+    "imagenes": [
+      "carrusel-dia-40/slide-01.png",
+      "carrusel-dia-40/slide-02.png",
+      "carrusel-dia-40/slide-03.png",
+      "carrusel-dia-40/slide-04.png",
+      "carrusel-dia-40/slide-05.png",
+      "carrusel-dia-40/slide-06.png",
+      "carrusel-dia-40/slide-07.png",
+      "carrusel-dia-40/slide-08.png"
+    ],
+    "texto": "Antes de empezar un proyecto de automatización pido cuatro cosas. Ninguna es un capricho: sin ellas, el proyecto se encalla siempre en el mismo sitio, que es la tercera semana.\n\n1. Un proceso, no un deseo. «Queremos algo con IA» no es un encargo. «Tardamos dos horas al día en repartir el correo que entra» sí lo es.\n\n2. Media hora con la persona que hace ese trabajo hoy. Vale más que tres reuniones con dirección, porque quien ejecuta conoce las excepciones, y las excepciones son el proyecto.\n\n3. Ejemplos reales. Veinte correos de verdad, veinte facturas de verdad, con sus rarezas y sin limpiar. Los ejemplos limpios producen sistemas que solo funcionan con ejemplos limpios.\n\n4. Los accesos en vuestras cuentas, nunca en las mías. Los flujos viven en vuestra casa desde el primer día, no cuando el proyecto termina.\n\nY lo que no pido: que sepáis de IA, que tengáis los datos ordenados, ni que cambiéis de herramientas.\n\nCon esas cuatro cosas, un diagnóstico sale en días en vez de en semanas.\n\n¿Cuál de las cuatro os costaría más reunir?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-17": {
+    "dia": 41,
+    "tema": "Usar IA sin sonar a IA",
+    "imagenes": [
+      "carrusel-dia-41/slide-01.png",
+      "carrusel-dia-41/slide-02.png",
+      "carrusel-dia-41/slide-03.png",
+      "carrusel-dia-41/slide-04.png",
+      "carrusel-dia-41/slide-05.png",
+      "carrusel-dia-41/slide-06.png",
+      "carrusel-dia-41/slide-07.png",
+      "carrusel-dia-41/slide-08.png"
+    ],
+    "texto": "Se nota cuando un texto lo ha escrito un modelo. Y se nota por cosas bastante concretas.\n\nLo que delata:\n· «En el mundo actual»\n· Tres adjetivos donde sobraban dos\n· Todo suena a folleto\n· Ninguna frase se moja con nada\n\nEl modelo no escribe mal. Escribe promedio. Y el promedio no convence a nadie porque no se parece a nadie: si tu texto podría firmarlo cualquier competidor tuyo, no está haciendo su trabajo.\n\nTres reglas que uso a diario:\n\nPrimera, dale material tuyo. Una nota de voz de cinco minutos contando el caso vale más que el mejor prompt del mundo, porque contiene lo que solo sabes tú.\n\nSegunda, pídele estructura, no voz. Que ordene las ideas y te diga qué falta. Las palabras las pones tú.\n\nTercera, quita el último tercio. Casi siempre sobra el final: ese párrafo que resume lo que acabas de decir. Bórralo entero y el texto mejora.\n\nLa IA te ahorra la página en blanco. No te ahorra tener algo que decir, y ahí es donde se gana o se pierde.\n\n¿Cuál de las cuatro señales te encuentras más a menudo?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-18": {
+    "dia": 42,
+    "tema": "De una idea a cuatro piezas",
+    "imagenes": [
+      "carrusel-dia-42/slide-01.png",
+      "carrusel-dia-42/slide-02.png",
+      "carrusel-dia-42/slide-03.png",
+      "carrusel-dia-42/slide-04.png",
+      "carrusel-dia-42/slide-05.png",
+      "carrusel-dia-42/slide-06.png",
+      "carrusel-dia-42/slide-07.png",
+      "carrusel-dia-42/slide-08.png"
+    ],
+    "texto": "Publicar cinco días a la semana no es tener cinco ideas. Es tener una y saber partirla.\n\nCuatro cortes de la misma idea:\n\n1. La idea contada entera.\n2. El dato que la sostiene.\n3. La objeción que le hacen siempre.\n4. Cómo se aplica el lunes por la mañana.\n\nSon cuatro ángulos, no cuatro versiones del mismo texto. Quien vea los cuatro no siente que te repites; quien vea solo uno lo entiende igual.\n\nDos cosas que hacen que funcione:\n\nEmpieza siempre por la larga. La pieza entera es la que obliga a pensar. Las otras tres salen de recortarla, y eso ya es trabajo mecánico que se hace en un rato.\n\nY cada pieza tiene que sostenerse sola, porque nadie ha visto la anterior. El contexto va en la primera línea, siempre.\n\nCon esto, una hora de pensar da para una semana de publicar. No es un truco de productividad: es dejar de confundir tener ideas con tener piezas.\n\n¿Cuántas ideas distintas crees que hay realmente detrás de tu último mes de publicaciones?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-19": {
+    "dia": 43,
+    "tema": "Lo que la IA no debe escribir",
+    "imagenes": [
+      "carrusel-dia-43/slide-01.png",
+      "carrusel-dia-43/slide-02.png",
+      "carrusel-dia-43/slide-03.png",
+      "carrusel-dia-43/slide-04.png",
+      "carrusel-dia-43/slide-05.png",
+      "carrusel-dia-43/slide-06.png",
+      "carrusel-dia-43/slide-07.png",
+      "carrusel-dia-43/slide-08.png"
+    ],
+    "texto": "Hay cuatro textos que no deberías dejar en manos de un modelo, y no por calidad: por lo que te cuestan si salen mal.\n\n· La respuesta a una queja.\n· El correo en el que pides perdón.\n· La propuesta a tu mejor cliente.\n· Tu opinión sobre algo polémico.\n\nLos cuatro tienen algo en común: lo que está en juego no es el texto, es la relación que hay detrás.\n\nQuien se queja no quiere una respuesta correcta. Quiere que alguien se haga cargo. Un texto impecable y vacío empeora la situación, porque confirma que al otro lado no hay nadie.\n\nY una disculpa escrita por un modelo se lee exactamente como lo que es: una disculpa que no siente nadie.\n\nPara todo lo demás, adelante. Borradores, resúmenes, primeras versiones, correos de trámite, actas. Ahí se gana tiempo de verdad y no se arriesga nada.\n\nLa regla, en una pregunta: ¿lo firmarías delante de esa persona? Si la respuesta es sí, escríbelo tú.\n\n¿Añadirías alguno más a la lista?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-20": {
+    "dia": 44,
+    "tema": "El archivo de ideas",
+    "imagenes": [
+      "carrusel-dia-44/slide-01.png",
+      "carrusel-dia-44/slide-02.png",
+      "carrusel-dia-44/slide-03.png",
+      "carrusel-dia-44/slide-04.png",
+      "carrusel-dia-44/slide-05.png",
+      "carrusel-dia-44/slide-06.png",
+      "carrusel-dia-44/slide-07.png",
+      "carrusel-dia-44/slide-08.png"
+    ],
+    "texto": "Las ideas buenas llegan en el peor momento y se van igual de rápido. No es falta de memoria: es que apuntarlas cuesta más que tenerlas.\n\nEl circuito que uso, y que se monta con lo que ya tienes:\n\n1. Todo va a un buzón único.\n2. Se guarda solo, con fecha y etiqueta.\n3. Una vez por semana lo repaso.\n4. Lo que sobrevive al repaso, se publica.\n\nLas dos reglas que lo sostienen son las que la gente se salta:\n\nUn solo sitio para todo. Notas de voz, capturas, enlaces, frases sueltas. Sin clasificar nada en el momento.\n\nY ordenar es trabajo de después. Si en el momento de la idea tienes que decidir en qué carpeta va, no la apuntas. Y si no la apuntas, se pierde.\n\nEl repaso semanal son veinte minutos. Lo que sigue pareciendo buena idea una semana más tarde, normalmente lo es.\n\nEsto es automatización de la aburrida: no impresiona a nadie en una demo y te cambia el mes.\n\n¿Dónde acaban ahora mismo tus ideas sueltas?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-21": {
+    "dia": 45,
+    "tema": "La semana en bloques",
+    "imagenes": [
+      "carrusel-dia-45/slide-01.png",
+      "carrusel-dia-45/slide-02.png",
+      "carrusel-dia-45/slide-03.png",
+      "carrusel-dia-45/slide-04.png",
+      "carrusel-dia-45/slide-05.png",
+      "carrusel-dia-45/slide-06.png",
+      "carrusel-dia-45/slide-07.png",
+      "carrusel-dia-45/slide-08.png"
+    ],
+    "texto": "Trabajando solo haces tres trabajos a la vez, y solo uno de ellos te paga hoy.\n\n· Entregar lo que ya has vendido.\n· Producir lo que te da a conocer.\n· Buscar al siguiente cliente.\n\nEl problema es mecánico: si el tercero no tiene hueco fijo en el calendario, desaparece, porque nunca es urgente. Y dos meses después no hay nada que entregar.\n\nMi reparto:\n\n· Mañanas para entregar.\n· Dos tardes de captación.\n· Una tarde de producir contenido.\n· Viernes para arreglar lo mío.\n\nLa captación va en el calendario con hora y sin excusa. Es lo primero que se cae cuando no está escrito en ninguna parte.\n\nY el viernes de mantenimiento es el que más me cuesta respetar y el que más me ahorra: es donde se arregla lo que iba a explotar la semana siguiente.\n\nLo que no hago: responder correo a primera hora, reuniones por la mañana, y mezclar entregar y vender en el mismo bloque.\n\nNo es disciplina. Es no dejar que lo importante dependa de que hoy sobre tiempo.\n\nSi trabajas por tu cuenta, ¿cuál de los tres trabajos es el que se te cae?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-22": {
+    "dia": 46,
+    "tema": "Tres automatizaciones personales",
+    "imagenes": [
+      "carrusel-dia-46/slide-01.png",
+      "carrusel-dia-46/slide-02.png",
+      "carrusel-dia-46/slide-03.png",
+      "carrusel-dia-46/slide-04.png",
+      "carrusel-dia-46/slide-05.png",
+      "carrusel-dia-46/slide-06.png",
+      "carrusel-dia-46/slide-07.png",
+      "carrusel-dia-46/slide-08.png"
+    ],
+    "texto": "Tres automatizaciones que no venden nada, no lucen en ninguna demo y me devuelven el final del día.\n\n1. El resumen del día. Lo que entró, lo que queda pendiente y lo de mañana, en un sitio y a una hora fija. Deja de existir esa media hora de repasar pestañas.\n\n2. Los archivos que llegan. Se renombran y se archivan solos según de quién vengan. Buscar un documento deja de ser una expedición.\n\n3. El seguimiento que se olvida. Presupuesto enviado hace siete días sin respuesta, y me avisa. Ese aviso, a lo largo de un año, es dinero.\n\nLas tres caben en una tarde y ninguna necesita inteligencia artificial. Son reglas, fechas y avisos.\n\nImportan más de lo que parece por tres motivos: te quitan decisiones pequeñas, te devuelven el final del día, y te enseñan en tus propias carnes cómo se siente automatizar algo.\n\nEso último no es menor. Lo que no automatizas para ti, no sabes venderlo.\n\n¿Cuál de las tres montarías primero?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-23": {
+    "dia": 47,
+    "tema": "La regla de los veinte minutos",
+    "imagenes": [
+      "carrusel-dia-47/slide-01.png",
+      "carrusel-dia-47/slide-02.png",
+      "carrusel-dia-47/slide-03.png",
+      "carrusel-dia-47/slide-04.png",
+      "carrusel-dia-47/slide-05.png",
+      "carrusel-dia-47/slide-06.png",
+      "carrusel-dia-47/slide-07.png",
+      "carrusel-dia-47/slide-08.png"
+    ],
+    "texto": "No todo lo repetitivo merece automatizarse, y hay una cuenta rápida para decidirlo.\n\nVeinte minutos a la semana es el umbral. Por debajo de ahí, casi nunca compensa: ni el montaje ni el mantenimiento llegan a pagarse.\n\nLa cuenta completa:\n\n1. Minutos que te cuesta a la semana.\n2. Por las semanas que trabajas al año.\n3. Menos lo que se tarda en montarlo.\n4. Menos lo que cuesta mantenerlo cada año.\n\nSi el primer año no sale claramente positivo, la respuesta no es automatizar: es simplificar. Casi siempre hay un paso que sobra y que nadie ha mirado en años.\n\nEl filtro rápido, para no hacer la cuenta cada vez:\n\nSí, si pasa todos los días, se hace siempre igual y molesta hacerlo.\nNo, si pasa dos veces al año, cambia cada vez, o se tarda menos en hacerlo que en explicarlo.\n\nY una cosa que se olvida: una automatización que no sale a cuenta no es neutra. Es una cosa más que mantener, y esas se acumulan.\n\n¿Qué automatizarías mañana si aplicaras esta cuenta?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-24": {
+    "dia": 48,
+    "tema": "Cinco preguntas antes de contratar",
+    "imagenes": [
+      "carrusel-dia-48/slide-01.png",
+      "carrusel-dia-48/slide-02.png",
+      "carrusel-dia-48/slide-03.png",
+      "carrusel-dia-48/slide-04.png",
+      "carrusel-dia-48/slide-05.png",
+      "carrusel-dia-48/slide-06.png",
+      "carrusel-dia-48/slide-07.png",
+      "carrusel-dia-48/slide-08.png"
+    ],
+    "texto": "Cinco preguntas para cualquiera que se presente como experto en IA. Ninguna es técnica y todas se contestan en un minuto.\n\n1. ¿Qué me vas a decir que NO haga? Si todo lo que le cuentas necesita inteligencia artificial, te está vendiendo, no asesorando.\n\n2. ¿Cuánto cuesta cada ejecución? Si no sabe responder, no ha llevado nada a producción. En producción esa cifra se mira todos los meses.\n\n3. ¿Qué pasa cuando se equivoque? La respuesta buena no es «no se equivoca». Es qué se valida, dónde para el sistema y a quién avisa.\n\n4. ¿En qué cuenta viven los flujos? Si viven en la suya, no has contratado a un proveedor: has contratado una correa.\n\n5. ¿Qué me dejas por escrito? Sin documentación no hay traspaso. Hay dependencia, que es otra cosa y se paga todos los meses.\n\nUn consejo sobre cómo escuchar las respuestas: fíjate menos en lo que contesta y más en si le incomoda la pregunta.\n\n¿Añadirías alguna sexta?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  },
+  "2026-10-25": {
+    "dia": 49,
+    "tema": "Por qué digo que no",
+    "imagenes": [
+      "carrusel-dia-49/slide-01.png",
+      "carrusel-dia-49/slide-02.png",
+      "carrusel-dia-49/slide-03.png",
+      "carrusel-dia-49/slide-04.png",
+      "carrusel-dia-49/slide-05.png",
+      "carrusel-dia-49/slide-06.png",
+      "carrusel-dia-49/slide-07.png",
+      "carrusel-dia-49/slide-08.png"
+    ],
+    "texto": "Digo que no a buena parte de lo que me piden, y creo que es lo más útil que puedo hacer por quien pregunta.\n\nDigo que no a:\n\n· «Algo con IA», sin un proceso concreto detrás.\n· Automatizar algo que nadie ha dibujado todavía.\n· Producto propio: eso es desarrollo de software, no automatización.\n· Un precio por debajo de lo que cuesta mantener aquello.\n\nDigo que sí a:\n\n· Un proceso concreto.\n· Con horas medibles.\n· Y alguien dentro de la empresa que quiera arreglarlo.\n\nLa tercera es la que más proyectos decide. Sin alguien dentro que lo quiera, el mejor flujo del mundo se abandona en dos meses.\n\nDecir que sí a todo es la vía rápida a tener la agenda llena y el cliente descontento, que es la combinación más cara que existe cuando trabajas solo.\n\nY decir que no rápido es lo más barato que puedo hacer por ti: te ahorra el presupuesto, la reunión y los tres meses de después.\n\nEl consultor que nunca te dice que no te está cobrando por estar de acuerdo.\n\n¿Te han dicho alguna vez que no necesitabas lo que ibas a comprar?\n\nMarco Pavón Cobo · MPAI Technologies\nAutomatización y agentes de IA para pymes y asesorías."
+  }
+}
