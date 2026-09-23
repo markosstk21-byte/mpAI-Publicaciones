@@ -84,7 +84,7 @@ publicando y LinkedIn en revisión, o al revés.
 ### 4. Probar antes de soltarlo
 
 Con `PUBLICAR_LINKEDIN_DE_VERDAD` en `0`, lanza el flujo a mano desde la pestaña
-Actions con una fecha forzada, por ejemplo `2026-10-11`. En el registro verás las
+Actions con una fecha forzada, por ejemplo `2026-10-12`. En el registro verás las
 URL de las imágenes y el texto entero, sin publicar nada.
 
 Cuando eso se vea bien, pon la variable a `1` y vuelve a lanzarlo con esa misma
@@ -98,7 +98,7 @@ lo de las varias imágenes.
 `calendario-linkedin.json` está indexado por fecha, igual que `calendario.json`:
 
 ```json
-"2026-10-11": {
+"2026-10-12": {
   "dia": 35,
   "tema": "Cinco señales de automatización",
   "imagenes": ["carrusel-dia-35/slide-01.png", "..."],
